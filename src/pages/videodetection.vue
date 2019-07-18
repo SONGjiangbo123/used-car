@@ -3,7 +3,7 @@
         <!-- 大图片组件   repeat（复用）文件-->
         <Picture :itemdata="arr"></Picture>
         <!-- 视频组件 videodetetection文件 -->
-        <Videocarlist landing="为你推荐" :itemdata="arra"></Videocarlist>
+        <Videocarlist :itemdata="arra"></Videocarlist>
         <More more="更多视频车源" :itemdata="arrb"></More>
     </div>
 </template>

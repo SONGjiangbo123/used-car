@@ -3,8 +3,8 @@
          <div class="item">
             <div class="caritem-left">
                 <img :src="imgurl" class="listimg">
-                <img :src="newcar" alt="" class="newcar">
-                <img :src="video" alt="" class="video">
+                <img :src="newcar" :class="hot">
+                <img :src="video"  class="video">
             </div>
             <div class="caritem-right">
                 <h4>{{name}}</h4>
@@ -26,11 +26,10 @@
             <div v-else>
                 <div class="label" :id="idname" >
                     <img :src="medals">       
-                    <span>{{item}}</span>
-                    
+                    <span>{{item}}</span>             
                 </div>
                 <div class="stwly">
-                    <p>三天无理由</p>
+                    <p>{{stwly}}</p>
                 </div>
             </div>
             
@@ -43,6 +42,7 @@
 export default {
     props:{
         imgurl:String,
+        hot:String,
         newcar:String,
         video:String,
         name:String,
@@ -57,7 +57,8 @@ export default {
         item:String,
         reason:Boolean,
         guarantee:String,
-        medals:String
+        medals:String,
+        stwly:String
     },
     data(){
         return {
@@ -77,6 +78,12 @@ export default {
         margin-right: .26rem;  
         overflow:hidden;
         position: relative;
+    }
+    .hot{
+        position: absolute;
+        top:0;
+        width: .53rem;
+        height: .65rem;
     }
     .newcar{
         position: absolute;

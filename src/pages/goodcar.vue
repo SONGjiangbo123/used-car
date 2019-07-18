@@ -1,9 +1,8 @@
 <template>
     <div>
         <Picture :itemdata="arr"></Picture>
-        <Videocarlist landing="为你推荐" :itemdata="arra"></Videocarlist>
-        <More more="更多超值车源" :itemdata="arrb"></More>
-        
+        <Videocarlist :itemdata="arra"></Videocarlist>
+        <More more="更多超值车源" :itemdata="arrb"></More>    
     </div>
 </template>
 <script>

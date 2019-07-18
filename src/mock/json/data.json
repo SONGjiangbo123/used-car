@@ -73,7 +73,8 @@
         {
             "id":4,                             
             "image":"../../../static/img/caritem1.jpg",
-            "newcar":"../../../static/img/newcar.png",
+            "hot":true,
+            "newcar":"../../../static/img/goodcarhot.png",
             "video":"../../../static/img/video.png",
             "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
             "data":"2018年/2.6万公里",
@@ -84,14 +85,15 @@
             "supply":"月供1967",
             "idname":true,
             "reason":true,
-            "medals":"../../../static/img/gold.png",  
+            "medals":"../../../static/img/gold.png",
             "item":"优信金牌认证",
             "guarantee":"30天包退一年保修"
         },
         {
             "id":5,                             
             "image":"../../../static/img/caritem1.jpg",  
-            "newcar":"../../../static/img/newcar.png",
+            "hot":true,
+            "newcar":"../../../static/img/goodcarhot.png",
             "video":"../../../static/img/video.png",  
             "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
             "data":"2018年/2.6万公里",
@@ -106,7 +108,8 @@
         {
             "id":6,                             
             "image":"../../../static/img/caritem1.jpg",
-            "newcar":"../../../static/img/newcar.png",
+            "hot":true,
+            "newcar":"../../../static/img/goodcarhot.png",
             "video":"../../../static/img/video.png",
             "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
             "data":"2018年/2.6万公里",
@@ -119,10 +122,9 @@
             "reason":false,
             "medals":"../../../static/img/gold.png",  
             "item":"优信金牌认证",
+            "stwly":"三天无理由",
             "guarantee":"30天包退一年保修"
-        }
-        
-        
+        }       
     ],
     
     "more":[
