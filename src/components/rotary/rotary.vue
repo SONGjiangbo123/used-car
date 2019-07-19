@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- 轮播图 -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(v,i) in itemdata" :key="i">
@@ -16,17 +17,14 @@ export default {
     props:{
         itemdata:Array,
     },
-    name: 'HelloWorld',
-    data () {
-        return {
-        msg: 'Welcome to Your Vue.js App'
-        }
-    },
     mounted(){
-        new Swiper ('.swiper-container', {
-            autoplay:true,
+        new Swiper ('.swiper-container', {          
             loop: true,
-            delay: 500,
+            autoplay:true,
+             delay: 500,
+            // observer:true,
+            // observeParents:true,
+            // disableOnInteraction:false
         })        
     }
 
@@ -35,13 +33,11 @@ export default {
 <style scoped>
     .swiper-container img{
         width: 100%;
-        /* height: 100px; */
         background: pink;
     }
     .swiper-slide{
         position: relative;
     }
-
     .swiper-slide p{
         width: 100%;
         position: absolute;

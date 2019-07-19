@@ -147,7 +147,92 @@
             "item":"大天窗才过瘾！3万起搞定夏日郊游神器",
             "image":"../../../static/img/roatry3.png"
         }
+    ],
+    "article":[
+        {
+            "image":"../../../static/img/artcle1.jpg",
+            "title":"大天窗才过瘾！3万起搞定夏日郊游神器",
+            "time":"2019-07-01",
+            "strength":"9816"
+        },
+        {
+            "image":"../../../static/img/artcle2.jpg",
+            "title":"大天窗才过瘾！3万起搞定夏日郊游神器",
+            "time":"2019-07-01",
+            "strength":"9816"
+        },
+        {
+            "image":"../../../static/img/artcle1.jpg",
+            "title":"大天窗才过瘾！3万起搞定夏日郊游神器",
+            "time":"2019-07-01",
+            "strength":"9816"
+        },
+        {
+            "image":"../../../static/img/artcle2.jpg",
+            "title":"大天窗才过瘾！3万起搞定夏日郊游神器",
+            "time":"2019-07-01",
+            "strength":"9816"
+        },
+        {
+            "image":"../../../static/img/artcle1.jpg",
+            "title":"大天窗才过瘾！3万起搞定夏日郊游神器",
+            "time":"2019-07-01",
+            "strength":"9816"
+        },
+        {
+            "image":"../../../static/img/artcle2.jpg",
+            "title":"大天窗才过瘾！3万起搞定夏日郊游神器",
+            "time":"2019-07-01",
+            "strength":"9816"
+        }
+        
+    ],
+    "clopedias":[
+        {   
+            "image":"../../../static/img/clopedias1.jpg",
+            "title":"国六7月1日执行",
+            "item":"市场政策"
+        },
+        {   
+            "image":"../../../static/img/clopedias1.jpg",
+            "title":"国六7月1日执行",
+            "item":"市场政策"
+        },
+        {   
+            "image":"../../../static/img/clopedias1.jpg",
+            "title":"国六7月1日执行",
+            "item":"市场政策"
+        },
+        {   
+            "image":"../../../static/img/clopedias1.jpg",
+            "title":"国六7月1日执行",
+            "item":"市场政策"
+        }
+    ],
+    "popular":[
+        {
+            "title":"本田雅阁18款性能较08款优越性突出在哪",
+            "context":"售后专家：雅阁性能卓越，目前有2.0L和2.4L两款动力，目前雅阁时代是最新车款，动力澎湃，外形新颖，保有量高",
+            "business":"卖车",
+            "number":"2",
+            "time":"2019-06-24"
+        },
+        {
+            "title":"本田雅阁18款性能较08款优越性突出在哪",
+            "context":"售后专家：雅阁性能卓越，目前有2.0L和2.4L两款动力，目前雅阁时代是最新车款，动力澎湃，外形新颖，保有量高",
+            "business":"卖车",
+            "number":"2",
+            "time":"2019-06-24"
+        },
+        {
+            "title":"本田雅阁18款性能较08款优越性突出在哪",
+            "context":"售后专家：雅阁性能卓越，目前有2.0L和2.4L两款动力，目前雅阁时代是最新车款，动力澎湃，外形新颖，保有量高",
+            "business":"买车",
+            "number":"2",
+            "time":"2019-06-24"
+        }
     ]
+
 
 
 

@@ -1,6 +1,8 @@
 <template>
+    
     <div class="list">
-        <Recommend landing="为你推荐"></Recommend>
+        <!-- 汽车类型组件 -->
+        <Recommend recom="为你推荐"></Recommend>
         <div class="video">
             <Caritem v-for="(v,i) in itemdata" :key="i" :id="v.id" :imgurl="v.image" :hot="v.hot?'hot':'newcar'"
              :newcar="v.newcar" :video="v.video" :name="v.name" :data="v.data" :price="v.price" 

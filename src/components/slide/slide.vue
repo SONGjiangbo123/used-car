@@ -1,5 +1,6 @@
 <template>
     <div class="nav">
+        <!-- 顶部导航条 -->
         <p onclick="history.go(-1)"> </p>
         <span>{{item}}</span>
         <router-link to="">
