@@ -1,10 +1,8 @@
 <template>
     <div class="nav">
-        <p onclick="history.go(-1)"> </p>
-        <span>{{item}}</span>
-        <router-link to="">
-            <span class="search"></span>
-        </router-link>
+        <a href="javascript:void(0);" onclick="history.go(-1)"></a>
+        <span>{{item}}</span>      
+        <span class="search"></span>
     </div>
 </template>
 <script>
@@ -24,8 +22,8 @@ export default {
         position: relative;
         border-bottom: 1px solid #ebe9e9;  
     }
-    .nav p{
-        /* display: block; */
+    .nav a{
+        display: block;
         width: .24rem;
         height: .24rem;
         border: solid #ff5a37;

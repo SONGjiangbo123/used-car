@@ -1,6 +1,6 @@
 <template>
     <div>
-         <div class="item" @click="fun(id)">
+         <div class="item">
             <div class="caritem-left">
                 <img :src="imgurl" class="listimg">
                 <img :src="newcar" :class="hot">
@@ -41,7 +41,6 @@
 <script>
 export default {
     props:{
-        id:Number,
         imgurl:String,
         hot:String,
         newcar:String,
@@ -65,23 +64,10 @@ export default {
         return {
             bool:true
         }
-    },
-    methods:{
-        fun(id){
-            this.$router.push("/details/"+id);
-            
-
-        }
-
     }
 }
 </script>
 <style scoped>
-.asd{
-    width: 100px;
-    height: 100px;
-    background: red;
-}
     .item{
         padding: 15px;
         display:flex;
