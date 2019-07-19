@@ -26,7 +26,7 @@ export default {
     created(){
         this.axios({
             url:"/contract/item",
-            methods:"get"
+            method:"get"
         }).then((ok)=>{
             this.arr = ok.data.video.splice(1,1);
             this.arra = ok.data.goodcar;

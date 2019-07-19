@@ -1,8 +1,6 @@
 <template>
-    <div>
-        
-        <Picture :itemdata="arr"></Picture>
-        
+    <div>       
+        <Picture :itemdata="arr"></Picture>       
     </div>
 </template>
 <script>
@@ -19,10 +17,9 @@ export default {
     created() {
         this.axios({
             url:"/contract/item",
-            methods:"get"
+            method:"get"
         }).then((ok)=>{
-            this.arr = ok.data.contract
-            console.log(this.arr);
+            this.arr = ok.data.contract.splice(0,7);
         })
     },
 }

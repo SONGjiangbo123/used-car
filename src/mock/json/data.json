@@ -6,7 +6,12 @@
         {"image":"../../../static/img/contract4.jpg"},
         {"image":"../../../static/img/contract5.jpg"},
         {"image":"../../../static/img/contract6.jpg"},
-        {"image":"../../../static/img/contract7.jpg"}   
+        {"image":"../../../static/img/contract7.jpg"},
+        {"image":"../../../static/img/guide1.jpg"},
+        {"image":"../../../static/img/guide2.jpg"},
+        {"image":"../../../static/img/guide3.jpg"},
+        {"image":"../../../static/img/guide4.jpg"},
+        {"image":"../../../static/img/guide5.jpg"}
     ],
     "video":[
         {"image":"../../../static/img/video1.png"},
@@ -99,7 +104,7 @@
             "data":"2018年/2.6万公里",
             "whole":true,
             "price":"7.50万",
-            "idname":false,  
+            "idname":false,
             "reason":true,           
             "medals":"../../../static/img/silver.png",     
             "item":"优信银牌认证",
@@ -125,13 +130,24 @@
             "stwly":"三天无理由",
             "guarantee":"30天包退一年保修"
         }       
-    ],
-    
+    ],   
     "more":[
         {"color":"#e65e0a"},
         {"color":"#ef4c31"}
+    ],
+    "rotary":[
+        {
+            "item":"6万买二手车？这几款看着都不错！",
+            "image":"../../../static/img/roatry1.jpg"
+            
+        },
+        {   "item":"安全！这3款买菜车身板硬朗，骨骼惊奇",
+            "image":"../../../static/img/roatry2.jpg"},
+        {
+            "item":"大天窗才过瘾！3万起搞定夏日郊游神器",
+            "image":"../../../static/img/roatry3.png"
+        }
     ]
-
 
 
 

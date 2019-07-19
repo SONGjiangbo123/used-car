@@ -4,11 +4,18 @@ import Contract from '../pages/contract'
 import Videodetection from '../pages/videodetection'
 import Goodcar from '../pages/goodcar'
 import Valuable from '../pages/valuable'
+import Guide from '../pages/guide'
+import Details from '../pages/details'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/guide',
+      name: 'Guide',
+      component: Guide
+    },
     {
       path: '/contract',
       name: 'Contract',
@@ -28,6 +35,11 @@ export default new Router({
       path: '/valuable',
       name: 'Valuable',
       component: Valuable
+    },
+    {
+      path: '/details/:id',
+      name: 'Details',
+      component: Details
     },
     {
       path: '/*',
