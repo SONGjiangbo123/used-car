@@ -25,8 +25,8 @@ export default {
         position: relative;
         border-bottom: 1px solid #ebe9e9;  
     }
-    .nav p{
-        /* display: block; */
+    .nav a{
+        display: block;
         width: .24rem;
         height: .24rem;
         border: solid #ff5a37;

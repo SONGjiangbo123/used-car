@@ -3,14 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import 'swiper/dist/css/swiper.css';
-
-import axios from 'axios'
-Vue.prototype.axios=axios
-
-require('./mock');
-
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+ 
 Vue.config.productionTip = false
+import axios from 'axios'
+Vue.prototype.axios = axios;
+Vue.use(MintUI)
+
+require('./mork')//main.js引用模拟数据
+
 
 /* eslint-disable no-new */
 new Vue({
