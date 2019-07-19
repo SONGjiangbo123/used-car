@@ -1,33 +1,49 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Sousuo from '../pages/Sousuo'
-import Register from '../pages/Register'
-import LocationStr from '../pages/LocationStr'
-import Filter from '../pages/Filter'
+import Contract from '../pages/contract'
+import Videodetection from '../pages/videodetection'
+import Goodcar from '../pages/goodcar'
+import Valuable from '../pages/valuable'
+import Guide from '../pages/guide'
+import Details from '../pages/details'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/sousuo',
-      name: 'Sousuo',
-      component: Sousuo
+      path: '/guide',
+      name: 'Guide',
+      component: Guide
     },
     {
-      path: '/register',
-      name: 'Register',
-      component: Register
+      path: '/contract',
+      name: 'Contract',
+      component: Contract
+    },
+    { 
+      path: '/videodetection',
+      name: 'Videodetection',
+      component: Videodetection
+    },
+    { 
+      path: '/goodcar',
+      name: 'Goodcar',
+      component: Goodcar
     },
     {
-      path: '/locationStr',
-      name: 'LocationStr',
-      component: LocationStr
+      path: '/valuable',
+      name: 'Valuable',
+      component: Valuable
     },
     {
-      path: '/filter',
-      name: 'Filter',
-      component: Filter
+      path: '/details/:id',
+      name: 'Details',
+      component: Details
+    },
+    {
+      path: '/*',
+      redirect:'/contract'
     }
   ]
 })

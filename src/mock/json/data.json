@@ -1,46 +1,154 @@
 {
-    "hot":[
+    "contract":[
+        {"image":"../../../static/img/contract1.jpg"},
+        {"image":"../../../static/img/contract2.jpg"},
+        {"image":"../../../static/img/contract3.jpg"},
+        {"image":"../../../static/img/contract4.jpg"},
+        {"image":"../../../static/img/contract5.jpg"},
+        {"image":"../../../static/img/contract6.jpg"},
+        {"image":"../../../static/img/contract7.jpg"},
+        {"image":"../../../static/img/guide1.jpg"},
+        {"image":"../../../static/img/guide2.jpg"},
+        {"image":"../../../static/img/guide3.jpg"},
+        {"image":"../../../static/img/guide4.jpg"},
+        {"image":"../../../static/img/guide5.jpg"}
+    ],
+    "video":[
+        {"image":"../../../static/img/video1.png"},
+        {"image":"../../../static/img/goodcar1.png"}
+
+    
+    ],
+    "carlist":[
         {
-            "title":"第一辆二手车"
+            "id":1,                             
+            "image":"../../../static/img/caritem1.jpg",
+            "newcar":"../../../static/img/newcar.png",
+            "video":"../../../static/img/video.png",
+            "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
+            "data":"2018年/2.6万公里",
+            "price":"7.50万",
+            "discount":"一成购",
+            "count":true,
+            "payments":"首付0.77万", 
+            "supply":"月供1967",
+            "idname":true,
+            "reason":true,
+            "medals":"../../../static/img/gold.png",  
+            "item":"优信金牌认证",
+            "guarantee":"30天包退一年保修"
         },
         {
-            "title":"大众"
+            "id":2,                             
+            "image":"../../../static/img/caritem1.jpg",  
+            "newcar":"../../../static/img/newcar.png",
+            "video":"../../../static/img/video.png",  
+            "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
+            "data":"2018年/2.6万公里",
+            "whole":true,
+            "price":"7.50万",
+            "idname":false,  
+            "reason":true,           
+            "medals":"../../../static/img/silver.png",     
+            "item":"优信银牌认证",
+            "guarantee":"30天包退6个月保修"
         },
         {
-            "title":"宝马"
+            "id":1,                             
+            "image":"../../../static/img/caritem1.jpg",
+            "newcar":"../../../static/img/newcar.png",
+            "video":"../../../static/img/video.png",
+            "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
+            "data":"2018年/2.6万公里",
+            "price":"7.50万",
+            "discount":"一成购",
+            "count":true,
+            "payments":"首付0.77万", 
+            "supply":"月供1967",
+            "idname":true,
+            "reason":false,
+            "medals":"../../../static/img/gold.png",  
+            "item":"优信金牌认证",
+            "guarantee":"30天包退一年保修"
+        }
+        
+        
+    ],
+    "goodcar":[
+        {
+            "id":4,                             
+            "image":"../../../static/img/caritem1.jpg",
+            "hot":true,
+            "newcar":"../../../static/img/goodcarhot.png",
+            "video":"../../../static/img/video.png",
+            "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
+            "data":"2018年/2.6万公里",
+            "price":"7.50万",
+            "discount":"一成购",
+            "count":true,
+            "payments":"首付0.77万", 
+            "supply":"月供1967",
+            "idname":true,
+            "reason":true,
+            "medals":"../../../static/img/gold.png",
+            "item":"优信金牌认证",
+            "guarantee":"30天包退一年保修"
         },
         {
-            "title":"奥迪"
+            "id":5,                             
+            "image":"../../../static/img/caritem1.jpg",  
+            "hot":true,
+            "newcar":"../../../static/img/goodcarhot.png",
+            "video":"../../../static/img/video.png",  
+            "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
+            "data":"2018年/2.6万公里",
+            "whole":true,
+            "price":"7.50万",
+            "idname":false,
+            "reason":true,           
+            "medals":"../../../static/img/silver.png",     
+            "item":"优信银牌认证",
+            "guarantee":"30天包退6个月保修"
         },
         {
-            "title":"奔驰"
-        },
+            "id":6,                             
+            "image":"../../../static/img/caritem1.jpg",
+            "hot":true,
+            "newcar":"../../../static/img/goodcarhot.png",
+            "video":"../../../static/img/video.png",
+            "name":"SWM斯威汽车 X7 2017款 1.5T 自动 智享型",
+            "data":"2018年/2.6万公里",
+            "price":"7.50万",
+            "discount":"一成购",
+            "count":true,
+            "payments":"首付0.77万", 
+            "supply":"月供1967",
+            "idname":true,
+            "reason":false,
+            "medals":"../../../static/img/gold.png",  
+            "item":"优信金牌认证",
+            "stwly":"三天无理由",
+            "guarantee":"30天包退一年保修"
+        }       
+    ],   
+    "more":[
+        {"color":"#e65e0a"},
+        {"color":"#ef4c31"}
+    ],
+    "rotary":[
         {
-            "title":"丰田"
+            "item":"6万买二手车？这几款看着都不错！",
+            "image":"../../../static/img/roatry1.jpg"
+            
         },
+        {   "item":"安全！这3款买菜车身板硬朗，骨骼惊奇",
+            "image":"../../../static/img/roatry2.jpg"},
         {
-            "title":"百公里7秒"
-        },
-        {
-            "title":"付一成开豪车"
-        },
-        {
-            "title":"月供千元练车"
-        },
-        {
-            "title":"超值准新车"
-        },
-        {
-            "title":"百公里6个油"
-        },
-        {
-            "title":"低价放心车"
-        },
-        {
-            "title":"捡漏好车"
-        },
-        {
-            "title":"撩妹神车"
+            "item":"大天窗才过瘾！3万起搞定夏日郊游神器",
+            "image":"../../../static/img/roatry3.png"
         }
     ]
+
+
+
 }
