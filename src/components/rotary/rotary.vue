@@ -21,7 +21,7 @@ export default {
         new Swiper ('.swiper-container', {          
             loop: true,
             autoplay:true,
-             delay: 500,
+            delay: 500,
             // observer:true,
             // observeParents:true,
             // disableOnInteraction:false
