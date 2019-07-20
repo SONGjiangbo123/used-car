@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- 图片组件 -->
         <img v-for="(v,i) in itemdata" :key="i" :src="v.image">
     </div>
 </template>

@@ -1,12 +1,13 @@
 <template>
     <div>
-        <div class="section-header"><span>{{landing}}</span></div>
+        <!-- 推荐组件 -->
+        <div class="section-header"><span>{{recom}}</span></div>
     </div>
 </template>
 <script>
 export default {
     props:{    
-        landing:String
+        recom:String
     }
 }
 </script>

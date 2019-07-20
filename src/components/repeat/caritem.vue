@@ -1,6 +1,7 @@
 <template>
     <div>
-         <div class="item">
+        <!-- 汽车类型子组件 -->
+         <div class="item" @click="fun(id)">          
             <div class="caritem-left">
                 <img :src="imgurl" class="listimg">
                 <img :src="newcar" :class="hot">

@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- 底部更多组件 -->
         <router-link to="/">
             <p class="jump" v-for="(v,i) in itemdata" :key="i" :style="{'background':v.color}">{{more}}</p>
         </router-link> 

@@ -1,8 +1,11 @@
 <template>
     <div class="nav">
-        <a href="javascript:void(0);" onclick="history.go(-1)"></a>
-        <span>{{item}}</span>      
-        <span class="search"></span>
+        <!-- 顶部导航条 -->
+        <p onclick="history.go(-1)"> </p>
+        <span>{{item}}</span>
+        <router-link to="">
+            <span class="search"></span>
+        </router-link>
     </div>
 </template>
 <script>
