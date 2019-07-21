@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="box">
     <Sellcar></Sellcar>
     <Sellcartext></Sellcartext>
     <Sellcaritem></Sellcaritem>
@@ -27,6 +27,8 @@ export default {
 }
 </script>
 <style socped>
-
+    .box{
+        background: white;
+    }
 </style>
  

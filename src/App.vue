@@ -48,5 +48,4 @@ export default {
       text-decoration: none;
       display: block;
     }
-
 </style>

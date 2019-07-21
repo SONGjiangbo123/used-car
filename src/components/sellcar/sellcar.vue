@@ -38,11 +38,11 @@ export default {
 }
 </script>
 <style scoped>
-/* 顶部 */
 .nav{
     width: 100%;
     position: relative;
-    padding: 3% 0 3% 3%;
+    padding: 3%;
+    background:whte;
 }
 .nav-aBack{
     display: block;
@@ -50,7 +50,7 @@ export default {
     height: .3rem;
     border: solid #ff5a37;
     border-width: 0 0 1.5px 1.5px;
-    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     position: absolute;
 }
 .nav span{
@@ -66,7 +66,6 @@ export default {
     position: absolute;
     padding-right: .2rem
 }
-/* 广告图片 */
 .sellcar_img img{
     width: 100%;
     height: 4rem;

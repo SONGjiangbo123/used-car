@@ -1,7 +1,9 @@
 <template>
   <div>
-    <header>
-      <i></i>
+    <header class="header">
+      <router-link to="/index">
+        <i></i>
+      </router-link>
       <router-link to class="header_seach">
         <span class="header-search-text">
           <span class="text">搜索你想要的车</span>
@@ -17,13 +19,13 @@ export default {
 </script>
 <style socped>
 /* header */
-header {
+.header {
   padding: 0.14rem 0;
   position: relative;
   z-index: 1;
   border-bottom: #c5c5c5 1px solid;
 }
-header i {
+.header i {
   display: inline-block;
   height: 0.46rem;
   width: 1rem;
@@ -62,7 +64,7 @@ header i {
   background: url("../../assets/sousuo.png") no-repeat 50%;
   background-size: 100%;
 }
-header .text {
+.header .text {
   padding-left: 0.3rem;
   width: 3.6rem;
 }

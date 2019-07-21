@@ -125,7 +125,7 @@ export default {
   position: relative;
 }
 .shopping_text li {
-  font-size: 0.28rem;
+  font-size: 0.33rem;
   color: #333;
   width: 25%;
   text-align: center;
