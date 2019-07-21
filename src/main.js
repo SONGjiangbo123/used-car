@@ -6,7 +6,7 @@ import router from './router'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
-import 'swiper/dist/css/swiper.css';
+// import 'swiper/dist/js/sweper.min.js'
 Vue.config.productionTip = false
 import axios from 'axios'
 Vue.prototype.axios = axios;

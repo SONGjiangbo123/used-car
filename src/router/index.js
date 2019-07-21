@@ -11,6 +11,7 @@ import Valuable from '../pages/valuable'
 import Home from '../pages/home'
 import Brand from '../pages/brand'
 import LocationStr from '../pages/LocationStr'
+import Shoppingcart from '../components/shopping/shoppingcart.vue'
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
         path: '/home',
         name: 'Home',
         component: Home
+      },
+      {
+        path: '/shoppingcart',
+        name: 'Shoppingcart',
+        component: Shoppingcart
       },
       {
         path:"/*",redirect:"/index"
