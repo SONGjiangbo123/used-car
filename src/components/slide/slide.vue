@@ -1,7 +1,7 @@
 <template>
     <div class="nav">
         <!-- 顶部导航条 -->
-        <p onclick="history.go(-1)"> </p>
+        <router-link to="/" onclick="history.go(-1)" class="return"></router-link> 
         <span>{{item}}</span>
         <router-link to="">
             <span class="search"></span>
@@ -15,7 +15,7 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style >
     .nav{
         line-height: .9rem;
         background: #fff;
@@ -25,11 +25,11 @@ export default {
         position: relative;
         border-bottom: 1px solid #ebe9e9;  
     }
-    .nav a{
+    .return{
         display: block;
         width: .24rem;
         height: .24rem;
-        border: solid #ff5a37;
+        border:1px solid #ff5a37;
         border-width: 0 0 1.5px 1.5px;
         -webkit-transform: rotate(45deg);
         position: absolute;

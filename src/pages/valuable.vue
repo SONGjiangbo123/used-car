@@ -62,6 +62,7 @@ export default {
             url:"/link/data",
             method: "get"
         }).then((ok)=>{
+            console.log(ok);
             this.arr = ok.data.rotary
             this.arrb=ok.data.article.splice(0,2)
             this.arrc=ok.data.clopedias

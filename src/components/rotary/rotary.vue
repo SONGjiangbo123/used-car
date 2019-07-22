@@ -13,6 +13,7 @@
 </template>
 <script>
 import Swiper from 'swiper'
+import 'swiper/dist/css/swiper.min.css';
 export default {
     props:{
         itemdata:Array,
@@ -21,10 +22,11 @@ export default {
         new Swiper ('.swiper-container', {          
             loop: true,
             autoplay:true,
-            delay: 500,
+            delay: 1000,
+            direction: 'horizontal',
             // observer:true,
             // observeParents:true,
-            // disableOnInteraction:false
+            disableOnInteraction:false
         })        
     }
 
@@ -33,6 +35,7 @@ export default {
 <style scoped>
     .swiper-container img{
         width: 100%;
+        height: 100%;
         background: pink;
     }
     .swiper-slide{
