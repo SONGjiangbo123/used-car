@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import Userxinxi from "../components/userxinxi"
+	import Userxinxi from "../components/userxinxi/userxinxi"
 	export default{
 		components:{
 			Userxinxi

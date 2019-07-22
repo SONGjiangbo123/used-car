@@ -7,8 +7,8 @@
 </template>
 
 <script>
-//	import Canpeihead from "../components/canpeihead"
-	import CarCanshu from "../components/carCanshu"
+//	import Canpeihead from "../components/canpeihead/canpeihead"
+	import CarCanshu from "../components/carCanshu/carCanshu"
 	export default{
 		components:{
 //			Canpeihead,

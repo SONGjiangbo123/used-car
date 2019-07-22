@@ -9,8 +9,8 @@
 </template>
 	
 <script>
-	import Head from "../components/head"
-	import Fangan from "../components/fangan"
+	import Head from "../components/head/head"
+	import Fangan from "../components/fangan/fangan"
 	export default{
 		components:{
 			Head,

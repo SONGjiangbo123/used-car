@@ -7,8 +7,8 @@
 </template>
 
 <script>
-	import Head from "../components/head"
-	import Jiance from "../components/jiance"
+	import Head from "../components/head/head"
+	import Jiance from "../components/jiance/jiance"
 	export default{
 		components:{
 			Head,

@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="video">
-			<img src="../../static/img/5cbbe79b4705a369060_19.jpg" />
+			<img src="../../../static/img/5cbbe79b4705a369060_19.jpg" />
 			<div class="video-mb">
 				<p> 共183段视频，500项检测 ,播放时长23分钟 </p>
 				<a>开始播放</a>
@@ -13,30 +13,30 @@
 			<div class="paicha-div1">
 				<span class="paicha-sp1" @click="fun1()">排除重大事故</span>
 				<div class="jiatou"></div>
-				<div class="xiang">67项<img src="../../static/img/ic-pass_41af74e.png" ></div>
+				<div class="xiang">67项<img src="../../../static/img/ic-pass_41af74e.png" ></div>
 			</div>
 			<div class="xiala" v-show="bools">
 				<span>
 					左前纵梁
-					<p><img src="../../static/img/ic-pass_41af74e.png" /></p> 
+					<p><img src="../../../static/img/ic-pass_41af74e.png" /></p> 
 				</span>
 				<span>
 					右前纵梁
-					<p><img src="../../static/img/ic-pass_41af74e.png" /></p> 
+					<p><img src="../../../static/img/ic-pass_41af74e.png" /></p> 
 				</span>
 				<span>
 					左后纵梁
-					<p><img src="../../static/img/ic-pass_41af74e.png" /></p> 
+					<p><img src="../../../static/img/ic-pass_41af74e.png" /></p> 
 				</span>
 				<span>
 					又后纵梁
-					<p><img src="../../static/img/ic-pass_41af74e.png" /></p> 
+					<p><img src="../../../static/img/ic-pass_41af74e.png" /></p> 
 				</span>
 			</div>
 			<div class="paicha-div1">
 				<span class="paicha-sp1">排除水泡火烧</span>
 				<div class="jiatou"></div>
-				<div class="xiang">65项<img src="../../static/img/ic-pass_41af74e.png" ></div>
+				<div class="xiang">65项<img src="../../../static/img/ic-pass_41af74e.png" ></div>
 			</div>
 		</div>
 		<!----------轻微碰撞-->
@@ -45,7 +45,7 @@
 			<div class="paicha-div1">
 				<span class="paicha-sp1">轻微碰撞</span>
 				<div class="jiatou"></div>
-				<div class="xiang">36项<img src="../../static/img/ic-pass_41af74e.png" ></div>
+				<div class="xiang">36项<img src="../../../static/img/ic-pass_41af74e.png" ></div>
 			</div>
 		</div>
 		<!-----------易损耗部件-->
@@ -54,7 +54,7 @@
 			<div class="paicha-div1">
 				<span class="paicha-sp1">易损耗部件</span>
 				<div class="jiatou"></div>
-				<div class="xiang">6项<img src="../../static/img/ic-pass_41af74e.png" ></div>
+				<div class="xiang">6项<img src="../../../static/img/ic-pass_41af74e.png" ></div>
 			</div>
 		</div>
 		<!--------------常用功能-->
@@ -63,29 +63,29 @@
 			<div class="paicha-div1">
 				<span class="paicha-sp1">外部配置</span>
 				<div class="jiatou"></div>
-				<div class="xiang">6项<img src="../../static/img/ic-pass_41af74e.png" ></div>
+				<div class="xiang">6项<img src="../../../static/img/ic-pass_41af74e.png" ></div>
 			</div>
 			<div class="paicha-div1">
 				<span class="paicha-sp1">内部配置</span>
 				<div class="jiatou"></div>
-				<div class="xiang">74项<img src="../../static/img/ic-pass_41af74e.png" ></div>
+				<div class="xiang">74项<img src="../../../static/img/ic-pass_41af74e.png" ></div>
 			</div>
 			<div class="paicha-div1">
 				<span class="paicha-sp1">灯光系统</span>
 				<div class="jiatou"></div>
-				<div class="xiang">13项<img src="../../static/img/ic-pass_41af74e.png" ></div>
+				<div class="xiang">13项<img src="../../../static/img/ic-pass_41af74e.png" ></div>
 			</div>
 			<div class="paicha-div1">
 				<span class="paicha-sp1">随车工具</span>
 				<div class="jiatou"></div>
-				<div class="xiang">7项<img src="../../static/img/ic-pass_41af74e.png" ></div>
+				<div class="xiang">7项<img src="../../../static/img/ic-pass_41af74e.png" ></div>
 			</div>
 		</div>
 		<!-----------------客服咨询-->
 		<div class="btm-kf">
 			<a class="btm-kf-a1">在线客服</a>
 			<a class="btm-kf-a2">
-				<img src="../../static/img/tel_3ce0430.png" />免费咨询 
+				<img src="../../../static/img/tel_3ce0430.png" />免费咨询 
 			</a>
 		</div>
 	</div>

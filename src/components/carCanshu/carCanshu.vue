@@ -12,35 +12,35 @@
 				<span>斯柯达 昕锐 2016款 1.6 手动 前行版</span>
 				
 			</div>
-			<div class="tu"><img src="../../static/img/123asd.jpg" /> </div>
+			<div class="tu"><img src="../../../static/img/123asd.jpg" /> </div>
 			<!----------空间-->
 			<div class="kongjian">
 				<div class="kongjian-head">
-					<img src="../../static/img/space_fee8e7b.png" />空间
+					<img src="../../../static/img/space_fee8e7b.png" />空间
 				</div>
 				<div class="carimgs">
 					<div class="carimg-1">
-						<img src="../../static/img/car1_3e5cbaf.png" />
+						<img src="../../../static/img/car1_3e5cbaf.png" />
 						<span>高:1469mm</span>
 						<span>长：4501mm</span>
 						<span>宽：1706mm</span>
 					</div>
 					<div class="carimg-2">
-						<img src="../../static/img/car2_81c7810.png" />
+						<img src="../../../static/img/car2_81c7810.png" />
 						<span>前轮距：-/-</span>
 					</div>
 					<div class="carimg-3">
-						<img src="../../static/img/car3_21e3519.png" />
+						<img src="../../../static/img/car3_21e3519.png" />
 						<span>后轮距：-/-</span>
 					</div>
 				</div>
 				<div class="carimg-btm">
 					<div class="carimg-btm-1">
-						<img src="../../static/img/car5_6542b89.png" /><span>车门数：4</span>
-						<img src="../../static/img/car4_2ee13a6.png" /><span>座椅数：5</span>
+						<img src="../../../static/img/car5_6542b89.png" /><span>车门数：4</span>
+						<img src="../../../static/img/car4_2ee13a6.png" /><span>座椅数：5</span>
 					</div>
 					<div class="carimg-btm-2">
-						<img src="../../static/img/car6_d2a47b5.png" />
+						<img src="../../../static/img/car6_d2a47b5.png" />
 						<span>轴距：2603mm</span>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 			<!-------油耗------->
 			<div class="kongjian">
 				<div class="kongjian-head">
-					<img src="../../static/img/space_fee8e7b.png" />油耗
+					<img src="../../../static/img/space_fee8e7b.png" />油耗
 				</div>
 				<div class="yh-title-box">
 					<div class="yh-title-box-div">
@@ -69,7 +69,7 @@
 			<!-----------动力-->
 			<div class="kongjian">
 				<div class="kongjian-head">
-					<img src="../../static/img/space_fee8e7b.png" />动力
+					<img src="../../../static/img/space_fee8e7b.png" />动力
 				</div>
 				<div class="yh-title-box">
 					<div class="yh-title-box-div">
@@ -101,7 +101,7 @@
 			<!----------操控-->
 			<div class="kongjian">
 				<div class="kongjian-head">
-					<img src="../../static/img/space_fee8e7b.png" />操控
+					<img src="../../../static/img/space_fee8e7b.png" />操控
 					<p class="guige-p"><span class="guige"></span>标配</p>
 				</div>
 				<div class="yh-title-box">
@@ -123,7 +123,7 @@
 			<!---------安全-->
 			<div class="kongjian">
 				<div class="kongjian-head">
-					<img src="../../static/img/space_fee8e7b.png" />安全
+					<img src="../../../static/img/space_fee8e7b.png" />安全
 					<p class="guige-p"><span class="guige"></span>标配</p>
 				</div>
 				<div class="yh-title-box">

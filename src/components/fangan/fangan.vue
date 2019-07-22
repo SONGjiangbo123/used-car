@@ -54,22 +54,22 @@
 				<p>二手车一成购四大优势</p>
 				<div class="youshi-div2">
 					<a>
-						<img src="../../static/img/shoufu_954834e.png" />
+						<img src="../../../static/img/shoufu_954834e.png" />
 						<span class="youshi-div2-sp2">低首付</span><br />
 						<span class="youshi-div2-sp1">低至车首付的10%</span>
 					</a>
 					<a>
-						<img src="../../static/img/yurgong_52470dd.png" />
+						<img src="../../../static/img/yurgong_52470dd.png" />
 						<span class="youshi-div2-sp2">低月供</span><br />
 						<span class="youshi-div2-sp1">月供压力小轻松还款</span>
 					</a>
 					<a>
-						<img src="../../static/img/menkan_71e60f4.png" />
+						<img src="../../../static/img/menkan_71e60f4.png" />
 						<span class="youshi-div2-sp2">低门槛</span><br />
 						<span class="youshi-div2-sp1">在线申请通过率高</span>
 					</a>
 					<a>
-						<img src="../../static/img/shenpi_f6b9762.png" />
+						<img src="../../../static/img/shenpi_f6b9762.png" />
 						<span class="youshi-div2-sp2">审批快</span><br />
 						<span class="youshi-div2-sp1">流程简单快速审批</span>
 						
@@ -82,24 +82,24 @@
 				<span>申请流程</span>
 			</div>
 			<div class="liucheng-div1">
-				<p class="liucheng-div1-p1"><img src="../../static/img/tijiao_icon_40522f7.png"/>提交申请</p>
-				<p class="liucheng-div1-p2"><img src="../../static/img/dian_5f8aff8.png"/>
+				<p class="liucheng-div1-p1"><img src="../../../static/img/tijiao_icon_40522f7.png"/>提交申请</p>
+				<p class="liucheng-div1-p2"><img src="../../../static/img/dian_5f8aff8.png"/>
 						<span>
 							线上提交基础信息后，优信会第一时间为您安排专属购车顾问提供1对1服务
 						</span>
 				</p>
 			</div>
 			<div class="liucheng-div1">
-				<p class="liucheng-div1-p1"><img src="../../static/img/shenpi_icon_d734538.png"/>急速审批</p>
-				<p class="liucheng-div1-p2"><img src="../../static/img/dian_5f8aff8.png"/>
+				<p class="liucheng-div1-p1"><img src="../../../static/img/shenpi_icon_d734538.png"/>急速审批</p>
+				<p class="liucheng-div1-p2"><img src="../../../static/img/dian_5f8aff8.png"/>
 						<span>
 							线下预约看车，在购车顾问协助下提交身份证、驾驶证、借记卡信息，最快60分钟即可查看审批结果
 						</span>
 				</p>
 			</div>
 			<div class="liucheng-div1">
-				<p class="liucheng-div1-p1"><img src="../../static/img/yizhantiche_icon_07f2b07.png"/>一展提车</p>
-				<p class="liucheng-div1-p2"><img src="../../static/img/dian_5f8aff8.png"/>
+				<p class="liucheng-div1-p1"><img src="../../../static/img/yizhantiche_icon_07f2b07.png"/>一展提车</p>
+				<p class="liucheng-div1-p2"><img src="../../../static/img/dian_5f8aff8.png"/>
 						<span>
 							确定成交意向后，优信为您提供包括合同签署、车辆过户、抵押办理在内的一站式服务
 						</span>
