@@ -1,7 +1,10 @@
 <template>
 <!-- 城市头部 -->
    <div class="Search_header">
-        <em class="header_goback"></em>
+       <router-link to="./home">
+           <em class="header_goback"></em>
+       </router-link>
+        
         
         <span>卖车城市</span>
         

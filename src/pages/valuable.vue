@@ -59,7 +59,7 @@ export default {
     },
     created() {
         this.axios({
-            url:"/contract/item",
+            url:"/link/data",
             method: "get"
         }).then((ok)=>{
             this.arr = ok.data.rotary

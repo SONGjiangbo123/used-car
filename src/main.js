@@ -11,7 +11,7 @@ import axios from 'axios'
 Vue.prototype.axios = axios;
 Vue.use(MintUI)
 
-require('./mork')//main.js引用模拟数据
+require('./mock')//main.js引用模拟数据
 
 
 /* eslint-disable no-new */
