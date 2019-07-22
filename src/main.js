@@ -5,8 +5,14 @@ import App from './App'
 import router from './router'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import Swiper from 'swiper'
+// import 'swiper/dist/css/swiper.min.css';
+import 'swiper/dist/css/swiper.min.css';
+// import '../node_modules/swiper/dist/css/swiper.css';
 
-// import 'swiper/dist/js/sweper.min.js'
+
+
+
 Vue.config.productionTip = false
 import axios from 'axios'
 Vue.prototype.axios = axios;
