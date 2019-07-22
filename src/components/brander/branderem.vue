@@ -2,7 +2,6 @@
     <div>
         
         <div class="brander_a">
-            
             <span class="brander_b">
                 <img :src="images" >
                 <p>{{name}}</p>
@@ -29,7 +28,7 @@ export default {
     img{
         width: 7%;
         float: left;
-        /* padding-top:4%; */
+        
     }
     p{
         float: left;

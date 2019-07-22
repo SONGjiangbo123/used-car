@@ -3,23 +3,16 @@
         <div class="color">
             <div class="box1">
                 <em class="header_goback"></em>
-                <span class="nav">车辆估价</span>
+                <p class="nav">车辆估价</p>
             </div>
-        <div class="color_a">
             <div class="box">
                 <span>卖车城市</span>
-                <router-link to="./LocationStr">
-                    <input type="text" class=text value="北京">
-                    <div class="goback"></div>
-                </router-link>
+                <router-link to="./LocationStr"><input type="text" class=text placeholder="请输入你想说的 >"></router-link>
                 
             </div>
             <div class="box">
                 <span>车辆牌照</span>
-                <p>A</p>
-                <div class="color_c"></div>
-                <p>泸</p>
-                <div class="color_c"></div>
+                <input type="text" class=text placeholder="泸 > A >">
 
             </div>
             <div class="box">
@@ -51,7 +44,7 @@
             </div>
         </div>
         <div class="color_b">车辆估价</div>
-        </div>   
+      
     </div>
           
 </template>
@@ -67,15 +60,12 @@ import Car from './car'  //引入组件
       return{
         date:'',
         bool:false,
-        
       }
     },
     
     methods:{
       show(){
-          this.bool=true;
-         
-
+          this.bool=true
       }
     }
   }
@@ -101,7 +91,7 @@ import Car from './car'  //引入组件
         margin-left:5%;
     }
     .nav{
-        width: 100%;
+        width: 80%;
         text-align: center;
         float: left;
     }
@@ -116,8 +106,9 @@ import Car from './car'  //引入组件
         height: 1.1rem;
         /* border-top:1px solid red; */
         border-bottom:1px solid #f1efef;
-        float: right;
+        /* float: left; */
         line-height: 1.1rem;
+        margin-left:5%;
         background-color: #fff;
 
     }
