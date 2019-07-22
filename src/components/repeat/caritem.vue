@@ -98,7 +98,6 @@ export default {
         bottom: .1rem;
         width: .44rem;
         height: .44rem;
-
     }
     .listimg{     
         width:100%;

@@ -11,7 +11,10 @@ import Valuable from '../pages/valuable'
 import Home from '../pages/home'
 import Brand from '../pages/brand'
 import LocationStr from '../pages/LocationStr'
-import Shoppingcart from '../components/shopping/shoppingcart.vue'
+import Shoppingcart from '../pages/shoppingcart.vue'
+import All from '../pages/all'
+import Cart from '../pages/cart'
+import Inquiry from '../pages/inquiry'
 
 Vue.use(Router)
 
@@ -73,9 +76,26 @@ export default new Router({
         component: Home
       },
       {
-        path: '/shoppingcart',
+        path: '/shoppingcart/cart',
         name: 'Shoppingcart',
-        component: Shoppingcart
+        component: Shoppingcart,
+        children:[
+          {
+            path: '/shoppingcart/all',
+            name: 'All',
+            component: All
+          },
+          {
+            path: '/shoppingcart/cart',
+            name: 'Cart',
+            component: Cart
+          },
+          {
+            path: '/shoppingcart/inquiry',
+            name: 'Inquiry',
+            component: Inquiry
+          }
+        ],redirect:'shoppingcart/cart'
       },
       {
         path:"/*",redirect:"/index"
