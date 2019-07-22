@@ -6,12 +6,20 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import MintUI from 'mint-ui'
+
 Vue.prototype.axios = axios
 
 require("./mock");
 Vue.use(ElementUI)
 
-Vue.config.productionTip = false
+
+
+import 'mint-ui/lib/style.css'
+
+// import 'swiper/dist/js/sweper.min.js'
+
+Vue.use(MintUI)
 
 /* eslint-disable no-new */
 new Vue({
