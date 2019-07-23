@@ -6,7 +6,9 @@
     </div>
 </template>
 <script>
-import Picture from '../components/repeat/picture'
+
+const Picture = () => import("../components/repeat/picture")
+
 export default {
     components:{
         Picture

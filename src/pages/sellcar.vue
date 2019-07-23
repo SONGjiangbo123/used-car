@@ -9,12 +9,17 @@
 </div>
 </template>
 <script>
-import Sellcar from "../components/sellcar/sellcar"
-import Sellcartext from "../components/sellcar/sellcartext"
-import Sellcaritem from "../components/sellcar/sellcaritem"
-import Sellcarprice from "../components/sellcar/sellcarprice"
-import Sellcarimg from "../components/sellcar/sellcarimg"
-import Sellcarbottom from "../components/sellcar/sellcarbottom"
+
+
+const Sellcar = () => import("../components/sellcar/sellcar")
+const Sellcartext = () => import("../components/sellcar/sellcartext")
+const Sellcaritem = () => import("../components/sellcar/sellcaritem")
+const Sellcarprice = () => import("../components/sellcar/sellcarprice")
+const Sellcarimg = () => import("../components/sellcar/sellcarimg")
+const Sellcarbottom = () => import("../components/sellcar/sellcarbottom")
+
+
+
 export default {
     components: {
         Sellcar,

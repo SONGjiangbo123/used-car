@@ -15,16 +15,21 @@
             <Slidemore title="热门问答"></Slidemore>
             <Popular :itemdata="arrd"></Popular>
         </div>
+        <div class="questions">
+            <router-link to=""></router-link>
+        </div>
     </div>
 </template>
 <script>
-import Slide from '../components/slide/slide'
-import Rotary from '../components/rotary/rotary'
-import Rotnav from '../components/rotary/rotnav'
-import Slidemore from '../components/repeat/slidemore'
-import Article from '../components/treasury/article'
-import Clopedias from '../components/treasury/clopedias'
-import Popular from '../components/treasury/popular'
+
+const Slide = () => import("../components/slide/slide")
+const Rotary = () => import("../components/rotary/rotary")
+const Rotnav = () => import("../components/repeat/more")
+const Slidemore = () => import("../components/repeat/slidemore")
+const Article = () => import("../components/treasury/article")
+const Clopedias = () => import("../components/treasury/clopedias")
+const Popular = () => import("../components/treasury/popular")
+
 export default {
     components:{
         Slide,
@@ -77,5 +82,15 @@ export default {
         overflow: hidden;
         margin-bottom: .2rem;
     }
-  
+    
+    .questions{
+        position: fixed;
+        bottom: .22rem;
+        right: .25rem;
+        width: 1.1rem;
+        height: 1.1rem;
+        background: url("../../static/img/ask.png") no-repeat;
+        background-size: 100%;
+        outline: none;
+    }
 </style>

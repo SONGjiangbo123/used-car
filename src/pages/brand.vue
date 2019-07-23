@@ -1,56 +1,56 @@
 <template>
     <div class="seater_a">
         <div class="brand_a">
-            <router-link to="./home">
+            <a href="javascript:history.go(-1);" @click="func()">
                 <em class="header_goback"></em>
-            </router-link>
+            </a>
             
-            <p>选择品牌</p>
+                  <p>选择品牌</p>
         </div>
         <div class="brand_e">
             热门品牌
         </div>
         <div class="brand_c">
-            <div class="brand_b">
-                <img src="../../static/img/2.png" >
+            <router-link to="" class="brand_b">
+                <img src="../assets/baoma_mats.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/3.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/baoma_mats_1.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/4.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/baoma_mats_2.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/5.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/aodi_big.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/6.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/yiqi_big.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/7.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/bieke.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/8.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/bentian_big.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/9.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/fute_big.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/10.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/richan_big.png" >
                 <span>大众</span>
-            </div>
-            <div class="brand_b">
-                <img src="../../static/img/11.png" >
+            </router-link>
+            <router-link to="" class="brand_b">
+                <img src="../assets/luhu_big.png" >
                 <span>大众</span>
-            </div>
+            </router-link>
         </div>
         <div class="brand_s">
             <p>A</p>
@@ -60,15 +60,20 @@
             <p>c</p>
             <Brander class="brand_d"></Brander>
         </div>
-       
+        <Remen class="brand_w"></Remen>
 
     </div>
+
 </template>
 <script>
-import Brander from '../components/brander/brander'
+
+const Brander = () => import("../components/brander/brander")
+const Remen = () => import("../components/brander/remen")
+
 export default {
     components:{
-       Brander
+       Brander,
+       Remen
     }
     
 }
@@ -112,19 +117,36 @@ export default {
         float: left;
     }
     img{
-        width: 50%;
-        padding-left:25%;
+        width: .64rem;
+        height: .64rem;
+        margin: 0 auto;
     }
     .brand_b{
         width: 20%;
-        height: 1.3rem;
-        /* border:1px solid red; */
-        float: left;
-        padding-top:.3rem;
-        line-height: .8rem;
+        display: table-cell;
+        padding: .3rem 0 .16rem;
         text-align: center;
+        float: left;
     }
     .brand_d{
         float: left;
+    }
+    .brand_b span{
+        display: block;
+        color: #585858;
+        font-size: .26rem;
+        margin-top: .2rem;
+    }
+    body{
+        line-height: 1;
+    }
+    .brand_w{
+         display: block;
+        position: fixed;
+        float: left;
+        top: 50%;
+        right: 0;
+        transform: translate3d(0,-50%,0);
+        z-index: 9; 
     }
 </style>

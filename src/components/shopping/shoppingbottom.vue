@@ -1,7 +1,7 @@
 <template>
 <div>
-    <div v-for="(v,i) in shopping" :key="i" class="item">
-        <router-link to="/"  >
+    <div v-for="(v,i) in mettods" :key="i" class="item">
+        <router-link to="/page"  >
             <div class="item_img">
                 <span>
                     <img :src="v.imgone">
@@ -11,9 +11,9 @@
             </div>
             <div class="item_text">
                 <ul class="item_li">
-                    <li>{{v.text}}</li>
-                    <li>{{v.year}}</li>
-                    <li>{{v.price}}</li>
+                    <li>{{v.carBrand}} {{v.carDisplaceMent}} {{v.carGearBox}} {{v.carKinds}}</li>
+                    <li>{{v.carTime}}/{{v.carDiatance}}</li>
+                    <li>{{v.carPrice}}</li>
                     <li class="item_span">
                         <span>一成购</span>
                         <span>{{v.down}}</span>
@@ -295,8 +295,18 @@ export default {
                 },
                 
             ],
+            mettods:[]
         }
     },
+    created(){
+        this.axios({
+            url:"/apis/loadAll",
+            methods:"get"
+        }).then((ok)=>{
+            console.log(ok.data)
+            this.mettods=ok.data
+        })
+    }
 
    
 
