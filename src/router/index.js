@@ -4,7 +4,49 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
+  routes: [   
+    {
+      path: '/zhao',
+      name: 'Zhao',
+      component: resolve=>(require(["@/pages/zhao"],resolve))
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: resolve=>(require(["@/pages/login"],resolve))
+    },
+    {
+      path: '/staler',
+      name: 'Staler',
+      component: resolve=>(require(["@/pages/staler"],resolve))
+    },
+  
+    {
+      path: '/carinfo',
+      name: 'Carinfo',
+      component: resolve=>(require(["@/pages/carinfo"],resolve))
+    },
+    {
+      path: '/wenti',
+      name: 'Wenti',
+      component: resolve=>(require(["@/pages/wenti"],resolve))
+    },
+    {
+      path: '/xieyi',
+      name: 'Xieyi',
+      component: resolve=>(require(["@/pages/xieyi"],resolve))
+    },
+    {
+      path: '/sfyz',
+      name: 'Sfyz',
+      component: resolve=>(require(["@/pages/sfyz"],resolve))
+    },
+    {
+      path: '/shangchuan',
+      name: 'Shangchuan',
+      component: resolve=>(require(["@/pages/shangchuan"],resolve))
+     },
+    
       {
         path:"/index",
         name:"Index",
