@@ -16,6 +16,12 @@ import Valuable from '../pages/valuable'
 import Home from '../pages/home'
 import Brand from '../pages/brand'
 import Shoppingcart from '../components/shopping/shoppingcart.vue'
+import Staler from '../pages/staler'
+import Datails from '../pages/datails'
+import Login from '../pages/login'
+import Zhao from '../pages/zhao'
+
+
 
 Vue.use(Router)
 
@@ -25,6 +31,26 @@ export default new Router({
       path: '/sousuo',
       name: 'Sousuo',
       component: Sousuo
+    },
+    {
+      path: '/datails',
+      name: 'Datails',
+      component:Datails
+    },
+    {
+      path: '/zhao',
+      name: 'Zhao',
+      component:Zhao
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component:Login
+    },
+    {
+      path: '/staler',
+      name: 'Staler',
+      component: Staler
     },
     {
       path: '/register',
