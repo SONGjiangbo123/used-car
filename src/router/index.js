@@ -6,7 +6,6 @@ import Canshu from "../pages/canshu"
 import Userinfo from "../pages/userinfo"
 import LocationStr from '../pages/LocationStr'
 import Serve from '../pages/serve'
-import Datails from '../pages/datails'
 import Sousuo from '../pages/Sousuo'
 import Register from '../pages/Register'
 import Filter from '../pages/Filter'
@@ -21,128 +20,41 @@ import Goodcar from '../pages/goodcar'
 import Valuable from '../pages/valuable'
 import Home from '../pages/home'
 import Brand from '../pages/brand'
-import Shoppingcart from '../components/shopping/shoppingcart'
 import Carinfo from '../pages/carinfo'
 import Wenti from '../pages/wenti'
 import Xieyi from '../pages/xieyi'
 import Sfyz from '../pages/sfyz'
 import Shangchuan from '../pages/shangchuan'
+import Staler from '../pages/staler'
+import Datails from '../pages/datails'
+import Login from '../pages/login'
+import Zhao from '../pages/zhao'
+import Shoppingcart from '../pages/shoppingcart'
+import All from '../pages/all'
+import Cart from '../pages/cart'
+import Inquiry from '../pages/inquiry'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-  	{
-  	 path:'/yichenggou',
-      name:'Yichenggou',
-      component: Yichenggou
-    },
-    {
-  	 path:'/jiancebaogao',
-      name:'Jiancebaogao',
-      component: Jiancebaogao
-    },
-    {
-    	path:'/canshu',
-    	name:'Canshu',
-    	component:Canshu
-    },
-    {
-    	path:"/userinfo",
-    	name:"/Userinfo",
-      component:Userinfo
-    
-    },
-
-    {
-      path: '/brand',
-      name: 'Brand',
-      component: Brand
-    },
-    {
-      path: '/datails',
-      name: 'Datails',
-      component: Datails
-    },
     
     {
-      path: '/sousuo',
-      name: 'Sousuo',
-      component: Sousuo
+      path: '/zhao',
+      name: 'Zhao',
+      component:Zhao
     },
     {
-      path: '/register',
-      name: 'Register',
-      component: Register
+      path: '/login',
+      name: 'Login',
+      component:Login
     },
     {
-      path: '/locationStr',
-      name: 'LocationStr',
-      component: LocationStr
+      path: '/staler',
+      name: 'Staler',
+      component: Staler
     },
   
-    {
-      path: '/serve',
-      name: 'Serve',
-      component: Serve
-    },
-   
-    
-    {
-      path: '/filter',
-      name: 'Filter',
-      component: Filter
-    },
-    {
-      path: '/bulekefu',
-      name: 'Bulekefu',
-      component: Bulekefu
-    },
-    {
-      path:"/index",
-      name:"Index",
-      component:Index
-    },
-    {
-      path:"/shopping",
-      name:"Shopping",
-      component:Shopping
-    },
-    {
-      path:"/page",
-      name:"Page",
-      component:Page
-    },
-    {
-      path:"/sellcar",
-      name:"Sellcar",
-      component:Sellcar
-    },
-    {
-      path: '/contract',
-      name: 'Contract',
-      component: Contract
-    },
-    { 
-      path: '/videodetection',
-      name: 'Videodetection',
-      component: Videodetection
-    },
-    { 
-      path: '/goodcar',
-      name: 'Goodcar',
-      component: Goodcar
-    },
-    {
-      path: '/valuable',
-      name: 'Valuable',
-      component: Valuable
-    },
-    {
-      path: '/shoppingcart',
-      name: 'Shoppingcart',
-      component: Shoppingcart
-    },
     {
       path: '/carinfo',
       name: 'Carinfo',
@@ -168,8 +80,143 @@ export default new Router({
     name: 'Shangchuan',
     component: Shangchuan
      },
-    {
-      path:"/*",redirect:"/index"
-    }
+    
+      {
+        path:"/index",
+        name:"Index",
+        component:Index
+      },
+      {
+        path:"/shopping",
+        name:"Shopping",
+        component:Shopping
+      },
+      {
+        path:"/page/:id",
+        name:"Page",
+        component:Page
+      },
+      {
+        path:"/sellcar",
+        name:"Sellcar",
+        component:Sellcar
+      },
+      {
+        path: '/contract',
+        name: 'Contract',
+        component: Contract
+      },
+      { 
+        path: '/videodetection',
+        name: 'Videodetection',
+        component: Videodetection
+      },
+      { 
+        path: '/goodcar',
+        name: 'Goodcar',
+        component: Goodcar
+      },
+      {
+        path: '/valuable',
+        name: 'Valuable',
+        component: Valuable
+      },
+      {
+        path: '/brand',
+        name: 'Brand',
+        component: Brand
+      },
+      {
+        path: '/locationStr',
+        name: 'LocationStr',
+        component: LocationStr
+      },
+      {
+        path: '/home',
+        name: 'Home',
+        component: Home
+      },
+      {
+        path: '/shoppingcart/cart',
+        name: 'Shoppingcart',
+        component: Shoppingcart,
+        children:[
+          {
+            path: '/shoppingcart/all',
+            name: 'All',
+            component: All
+          },
+          {
+            path: '/shoppingcart/cart',
+            name: 'Cart',
+            component: Cart
+          },
+          {
+            path: '/shoppingcart/inquiry',
+            name: 'Inquiry',
+            component: Inquiry
+          }
+        ],redirect:'shoppingcart/cart'
+      },
+      
+      {
+      path:'/yichenggou',
+        name:'Yichenggou',
+        component: Yichenggou
+      },
+      {
+      path:'/jiancebaogao',
+        name:'Jiancebaogao',
+        component: Jiancebaogao
+      },
+      {
+        path:'/canshu',
+        name:'Canshu',
+        component:Canshu
+      },
+      {
+        path:"/userinfo",
+        name:"/Userinfo",
+        component:Userinfo
+      
+      },
+
+      {
+        path: '/datails',
+        name: 'Datails',
+        component: Datails
+      },
+      
+      {
+        path: '/sousuo',
+        name: 'Sousuo',
+        component: Sousuo
+      },
+      {
+        path: '/register',
+        name: 'Register',
+        component: Register
+      },
+  
+      {
+        path: '/serve',
+        name: 'Serve',
+        component: Serve
+      },
+   
+     
+      {
+        path: '/filter',
+        name: 'Filter',
+        component: Filter
+      },
+      {
+        path: '/bulekefu',
+        name: 'Bulekefu',
+        component: Bulekefu
+      },
+      {
+        path:"/*",redirect:"/index"
+      }
   ]
 })

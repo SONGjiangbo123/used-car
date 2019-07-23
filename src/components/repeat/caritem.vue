@@ -42,6 +42,7 @@
 <script>
 export default {
     props:{
+        id:String,
         imgurl:String,
         hot:String,
         newcar:String,
@@ -64,6 +65,11 @@ export default {
     data(){
         return {
             bool:true
+        }
+    },
+    methods:{
+        fun(id){
+            this.$router.push("/page/"+id);
         }
     }
 }
@@ -98,7 +104,6 @@ export default {
         bottom: .1rem;
         width: .44rem;
         height: .44rem;
-
     }
     .listimg{     
         width:100%;

@@ -31,9 +31,7 @@
 .push-inp{
     margin-top:9px;
     width: 60%;
-    /* filter: alpha(opacity=0); */
     opacity: 0;
-    filter: alpha(opacity: 0;);
     cursor: pointer;
     text-decoration: none;
     -moz-opacity:0;				

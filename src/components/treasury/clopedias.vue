@@ -1,4 +1,5 @@
 <template>
+    <!-- 百科 -->
      <div class="ency-list">
         <div class="scroller">
             <router-link to="" class="list" v-for="(v,i) in itemdata" :key="i">

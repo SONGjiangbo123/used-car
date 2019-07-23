@@ -33,5 +33,11 @@ export default {
 </script>
 
 <style scoped>
-
+    a{
+    padding: .06rem .15rem;
+    color: #FF5A37;
+    font-size: .2rem;
+    text-align: center;
+    display: block;
+    }
 </style>
