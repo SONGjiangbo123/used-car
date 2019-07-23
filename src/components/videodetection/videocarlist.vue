@@ -4,7 +4,7 @@
         <!-- 汽车类型组件 -->
         <Recommend recom="为你推荐"></Recommend>
         <div class="video">
-            <Caritem v-for="(v,i) in itemdata" :key="i" :imgurl="v.image" :hot="v.hot?'hot':'newcar'"
+            <Caritem v-for="(v,i) in itemdata" :key="i" :id="v.id" :imgurl="v.image" :hot="v.hot?'hot':'newcar'"
              :newcar="v.newcar" :video="v.video" :name="v.name" :data="v.data" :price="v.price" 
              :discount="v.discount" :count="v.count?'discount':''" :whole="v.whole?'price':'whole'" 
              :reason="v.reason" :payments="v.payments" :supply="v.supply" :medals="v.medals"  :item="v.item" 
@@ -13,12 +13,12 @@
     </div>
 </template>
 <script>
-import Recommend from './recommend'
-import Caritem from '../repeat/caritem'
+const Recommend = () => import("./recommend")
+const Caritem = () => import("../repeat/caritem")
 export default {
     components:{
-        Caritem,
-        Recommend
+        Recommend,
+        Caritem
     },
     props:{
         itemdata:Array

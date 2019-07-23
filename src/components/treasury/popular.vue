@@ -1,6 +1,6 @@
 <template>
     <div >
-       
+       <!-- 热门问答 -->
         <div class="list" v-for="(v,i) in itemdata" :key="i">
             <router-link to="">
                 <h3>{{v.title}}</h3>

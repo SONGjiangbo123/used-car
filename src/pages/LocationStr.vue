@@ -7,8 +7,10 @@
     </div>
 </template>
 <script>
-import LocationHearder from '../components/location/locationHearder'
-import LocationBody from '../components/location/locationBody'
+
+const LocationHearder = () => import("../components/location/locationHearder")
+const LocationBody = () => import("../components/location/locationBody")
+
 export default {
     components:{
         LocationHearder,

@@ -7,19 +7,19 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import MintUI from 'mint-ui'
-
-Vue.prototype.axios = axios
-
-require("./mock");
-Vue.use(ElementUI)
-
-
-
 import 'mint-ui/lib/style.css'
 
-// import 'swiper/dist/js/sweper.min.js'
-
 Vue.use(MintUI)
+Vue.use(ElementUI)
+Vue.prototype.axios = axios
+Vue.config.productionTip = false
+
+require("./mock");
+
+
+
+
+
 
 /* eslint-disable no-new */
 new Vue({

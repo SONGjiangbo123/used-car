@@ -12,22 +12,28 @@
     </div>
 </template>
 <script>
+
 import Swiper from 'swiper'
 import 'swiper/dist/css/swiper.min.css';
+
 export default {
     props:{
-        itemdata:Array,
+        itemdata:Array
     },
-    mounted(){
+    updated(){
         new Swiper ('.swiper-container', {          
             loop: true,
             autoplay:true,
-            delay: 1000,
-            direction: 'horizontal',
+            // delay: 500,
+            // stopOnLastSlide: false,
+            // disableOnInteraction: true
+            // direction: 'horizontal',
             // observer:true,
             // observeParents:true,
-            disableOnInteraction:false
-        })        
+            // disableOnInteraction:false
+        })     
+     
+   
     }
 
 }
