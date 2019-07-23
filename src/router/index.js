@@ -5,7 +5,7 @@ import Jiancebaogao from '../pages/jiancebaogao'
 import Canshu from "../pages/canshu"
 import Userinfo from "../pages/userinfo"
 import Serve from '../pages/serve'
-import Datails from '../pages/datails'
+
 import Sousuo from '../pages/Sousuo'
 import Register from '../pages/Register'
 import Filter from '../pages/Filter'
@@ -20,7 +20,6 @@ import Goodcar from '../pages/goodcar'
 import Valuable from '../pages/valuable'
 import Home from '../pages/home'
 import Brand from '../pages/brand'
-import Shoppingcart from '../components/shopping/shoppingcart.vue'
 import Staler from '../pages/staler'
 import Datails from '../pages/datails'
 import Login from '../pages/login'
