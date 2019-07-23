@@ -11,7 +11,7 @@
             </div>
             <div class="item_text">
                 <ul class="item_li">
-                    <li>{{v.text}}</li>
+                    <li>{{v.text}}</li> 
                     <li>{{v.year}}</li>
                     <li>{{v.price}}</li>
                     <li class="item_span">
@@ -342,7 +342,7 @@ export default {
     display: flex;
     width: 62%;
     margin-left: 2.9rem;
-    margin-top: -.08rem;
+    margin-top: -.06rem;
 }
 .item_li{
     margin-top: .3rem;

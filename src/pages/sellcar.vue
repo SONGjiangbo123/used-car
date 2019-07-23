@@ -12,7 +12,7 @@
 import Sellcar from "../components/sellcar/sellcar"
 import Sellcartext from "../components/sellcar/sellcartext"
 import Sellcaritem from "../components/sellcar/sellcaritem"
-import Sellcarprice from "../components/sellcar/sellcarprice "
+import Sellcarprice from "../components/sellcar/sellcarprice"
 import Sellcarimg from "../components/sellcar/sellcarimg"
 import Sellcarbottom from "../components/sellcar/sellcarbottom"
 export default {
