@@ -69,7 +69,7 @@ export default {
     },
     methods:{
         fun(id){
-            this.$router.push("/details/"+id);
+            this.$router.push("/page/"+id);
         }
     }
 }

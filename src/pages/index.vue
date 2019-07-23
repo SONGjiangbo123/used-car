@@ -61,7 +61,7 @@
           </router-link>
         </li>
       </ul>
-      <router-link to class="indexB-Bottom-btn">查看全部1903俩车</router-link>
+      <router-link to="/shopping" class="indexB-Bottom-btn">查看全部{{count}}俩车</router-link>
     </div>
     <!-- 今日最新 -->
     <div class="index_sku_wrap">
@@ -662,15 +662,15 @@ export default {
       url: "/apis/loadAll",
       methods: "get"
     }).then((ok)=>{
-      console.log(ok);
+      console.log(ok.data.length);
       // this.dazhong=ok.data.queryResult.list[0].carName
-      console.log(ok.data.queryResult.list)
-      this.dazhong=ok.data.queryResult.list
+      this.count = ok.data.length
     });
   },
   data() {
     return {
       dazhong:"",
+      count:"",
       // 买车商城
       playcar: [
         { title: "买车商城", imgagr: require("../assets/qiche.png") },
@@ -729,12 +729,8 @@ export default {
     };
   },
   methods: {
-    showIcons() {
-      var ss = document.getElementsByClassName("index_tabs_ul")[0];
-      console.log(ss.scrollLeft);
-    },
     showIcon() {
-      if (document.documentElement.scrollTop &&document.documentElement.scrollTop > 850 &&document.documentElement.scrollTop < 1814) {
+      if (document.documentElement.scrollTop &&document.documentElement.scrollTop > 849 &&document.documentElement.scrollTop < 1814) {
         this.tabs = true;
         this.divHidden = true;
         this.tabstes1 = true;
@@ -745,7 +741,6 @@ export default {
         this.tabstes6 = false;
         this.truemett = true;
         var ss = document.getElementsByClassName("index_tabs_ul")[0];
-        ss.scrollLeft = 0; 
       } else if (document.documentElement.scrollTop &&document.documentElement.scrollTop >= 1814 &&document.documentElement.scrollTop < 2789) {
         this.tabstes1 = false;
         this.tabstes2 = true;
@@ -807,12 +802,11 @@ export default {
       } else {
         this.tabs = false;
         this.divHidden = false;
-        this.tabstes2 = false;
         this.truemett = false;
       }
     },
     func1() {
-      document.documentElement.scrollTop = 851;
+      document.documentElement.scrollTop = 849;
       this.tabstes1 = true;
       this.tabstes2 = false;
       this.tabstes3 = false;
@@ -823,6 +817,7 @@ export default {
     func2() {
       var ss = document.getElementsByClassName("index_tabs_ul")[0];
       ss.scrollLeft = 0;
+      console.log(ss.scrollLeft)
       document.documentElement.scrollTop = 1815;
       this.tabstes1 = false;
       this.tabstes2 = true;
@@ -833,7 +828,7 @@ export default {
     },
     func3() {
       var ss = document.getElementsByClassName("index_tabs_ul")[0];
-      ss.scrollLeft = 140;
+      ss.scrollLeft = 147;
       document.documentElement.scrollTop = 2790;
       this.tabstes1 = false;
       this.tabstes2 = false;
@@ -844,7 +839,8 @@ export default {
     },
     func4() {
       var ss = document.getElementsByClassName("index_tabs_ul")[0];
-      ss.scrollLeft = 500;
+      ss.scrollLeft= 380;
+      console.log(ss.scrollLeft)
       document.documentElement.scrollTop = 3765;
       this.tabstes1 = false;
       this.tabstes2 = false;
@@ -855,8 +851,8 @@ export default {
     },
     func5() {
       var ss = document.getElementsByClassName("index_tabs_ul")[0];
-      ss.scrollLeft = 600;
-      document.documentElement.scrollTop = 4751;
+      ss.scrollLeft = 380;
+      document.documentElement.scrollTop = 4740;
       this.tabstes1 = false;
       this.tabstes2 = false;
       this.tabstes3 = false;
@@ -865,7 +861,7 @@ export default {
       this.tabstes6 = false;
     },
     func6() {
-      document.documentElement.scrollTop = 5720;
+      document.documentElement.scrollTop = 5715;
       this.tabstes1 = false;
       this.tabstes2 = false;
       this.tabstes3 = false;

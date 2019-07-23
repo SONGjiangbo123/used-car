@@ -2,9 +2,9 @@
     <div>
         <div>
             <div class="page_back_wrap">
-                <router-link to="" class="back">
-                    <i class="page_back_left"></i>
-                </router-link>
+                <a href="javascript:void(0);" class="back">
+                    <i class="page_back_left" @click="funa()"></i>
+                </a>
                 <router-link to="">
                     <i class="page_back_right"></i>
                 </router-link>
@@ -52,7 +52,11 @@
 
 <script>
 export default {
-    
+    methods:{
+        funa(){
+            this.$router.go(-1);
+        }
+    }
 }
 </script>
 

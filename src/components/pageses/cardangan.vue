@@ -41,7 +41,7 @@
                 <li>
                     <h3>认证服务</h3>
                     <div class="city-wide">315项检测 · 无重大事故 无水泡 无火烧</div>
-                    <i class="icon-more"></i>
+                    <i class="icon-more" @click="func()"></i>
                 </li>
                 <li>
                     <h3>交易服务</h3>
@@ -59,14 +59,22 @@
                 </li>
             </ul>
         </section>
+        <Renzhenfuwu></Renzhenfuwu>
     </div>
 </template>
 
 <script>
 import Uvintips from './uvintips'
+import Renzhenfuwu from './renzhenfuwu'
 export default {
     components:{
-        Uvintips
+        Uvintips,
+        Renzhenfuwu
+    },
+    methods:{
+        func(){
+
+        }
     }
 }
 </script>
