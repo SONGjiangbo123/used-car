@@ -101,6 +101,11 @@ import Car from './car'  //引入组件
         /* border:1px solid red; */
         height: 6.7rem;
     }
+    .color_a{
+        background-color: #fff;
+        /* border:1px solid red; */
+        height: 6.7rem;
+    }
    .item:hover Car{
        display: block;
    }
@@ -252,6 +257,36 @@ import Car from './car'  //引入组件
         line-height: 1rem;
         text-align: center;
         float: left;
-        color:#fff;
     }
+    .goback{
+        width: .2rem;
+        height: .2rem; 
+        border:1px solid #dbdada;
+        border-width:1.5px 1.5px 0 0;
+        transform: rotate(45deg);
+        position: relative;
+        left: 168px;
+        float:right;
+        margin-top:.45rem;
+    } 
+    input{
+        padding-right: 20px;
+    }
+    .color_c{
+        width: .2rem;
+        height: .2rem; 
+        border:1px solid #dbdada;
+        border-width:0 1.5px 1.5px 0;
+        transform: rotate(45deg);
+        position: relative;
+        margin-right:-.7rem;
+        float:right;
+        
+        margin-top:.4rem;
+    }
+    p{
+        float: right;
+        margin-right: .7rem;
+    }
+    
 </style>

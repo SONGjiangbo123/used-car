@@ -1,15 +1,24 @@
 <template>
+<<<<<<< HEAD
     <div class="datails">
+=======
+    <div>
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
         <div class="datails_a">
             <em class="header_goback"></em>
             优信金牌认证质保范围
         </div>
         <div>
+<<<<<<< HEAD
             <!-- <div class="datails_nav">
+=======
+            <div>
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
                 <span ><a href="">30天包退</a></span>
                 <span ><a href="">30天包退</a></span>
                 <span ><a href="">30天包退</a></span>
                 <span ><a href="">30天包退</a></span>
+<<<<<<< HEAD
             </div> -->
             <ul class="item_a item_b">
                 
@@ -23,15 +32,25 @@
             <div class="item_e">
             <div>
                 <!-- <img class="datails_b" src="../../static/img/27.png" alt=""> -->
+=======
+            </div>
+            <div>
+                <img class="datails_b" src="../../static/img/27.png" alt="">
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
                 <p class="datails_c">优信金牌认证</p>
                 <img class="datails_d" src="../../static/img/48.png" alt="">
                 <p class="datails_e">315项检测//30天包换//1年保修//全国联保</p>
             </div>
+<<<<<<< HEAD
             <div id="d5">
+=======
+            <div>
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
                 <div class="datails_h">
                     <img class="datails_f" src="../../static/img/28.png" >
                     <h2>30天包退</h2>
                     <hr>
+<<<<<<< HEAD
                     
                     <p class="datails_g ">自协议生效之日起30个自然日内，如您发现车辆在本次成交前已存在以下任意
                         一种重大事故损伤情形，经优信二手车认定属实后，优信二手车负责回收车
@@ -236,10 +255,30 @@
                 </div>
                   
             </div>
+=======
+                    <p class="datails_g">自协议生效之日起30个自然日内，如您发现车辆在本次成交前已存在以下任意
+                        一种重大事故损伤情形，经优信二手车认定属实后，优信二手车负责回收车
+                        辆，受让您对车辆卖家享有的全部债权并退还您车款：
+                    
+                        <ul>
+                            <li class="txt">发动机舱、驾驶舱曾因撞击而严重损坏，导致发动机舱前围板(引擎室隔
+                                板)有焊接、切割、整形、变形达到5厘米以上(含)；</li>
+                            <li>纵梁以及横梁有焊接、切割、整形、变形的；</li>
+                            <li>避震器塔座有裂痕以及钣金痕迹达10厘米以上(含)；</li>
+                            <li>ABC柱有焊接、切割、整形、变形达10厘米以上(含)；</li>
+                            <li>曾因撞击造成安全气囊弹出；</li>
+                            <li>v曾遭遇水淹，涉及水位超过机盖，并已进入驾驶室，且水位没过排挡杆
+                                下沿(以标准排挡杆位置为准)；</li>
+                            <li>车身有火烧痕迹且面积达0.5平方米以上(含)。</li>
+                        </ul>
+                    </p>
+                </div>
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
             </div>
         </div>
     </div>
 </template>
+<<<<<<< HEAD
 
 <script>
 export default {
@@ -279,6 +318,14 @@ export default {
     .datails{
         background-color: #f4f4f4;
     }
+=======
+<script>
+export default {
+    
+}
+</script>
+<style scoped>
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
     .datails_a{
         width: 100%;
         height: 1rem;
@@ -297,6 +344,7 @@ export default {
         border:solid #ff5a37;
         border-width: 0 0 1.5px 1.5px;
         transform: rotate(45deg);
+<<<<<<< HEAD
         float: left;
     }
     .item_a{
@@ -323,10 +371,22 @@ export default {
     .item_e:hover .item_a{
         margin-top: 0;
         position: fixed;
+=======
+    }
+    span{
+        float: left;
+        text-align: center;
+        line-height: 1rem;
+        margin-left:.7rem;
+        /* border-bottom:2px solid red; */
+        
+        
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
     }
     span a{
         color:black;
     } 
+<<<<<<< HEAD
     .datails_c{
         width: 7rem;
         height: 3rem;
@@ -338,18 +398,40 @@ export default {
         color:#857347;
         background:url("../../static/img/27.png");
         background-size: contain;
+=======
+    .datails_b{
+        width: 6.8rem;
+        height: 3rem;
+        margin:.3rem .35rem;
+        float: left;
+    }
+    .datails_c{
+        float: left;
+        margin-top:-2.8rem;
+        margin-left: 1rem;
+        font-size: .5rem;
+        color:#857347;
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
     }
     .datails_d{
         width: .5rem;
         height: .5rem;
         float: left;
+<<<<<<< HEAD
         margin-top:-2rem;
+=======
+        margin-top:-2.7rem;
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
         margin-left: 4.2rem;
     }
     .datails_e{
         float: left;
         font-size: .3rem;
+<<<<<<< HEAD
         margin-top:-1rem;
+=======
+        margin-top:-1.5rem;
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
         margin-left:1rem;
         color:#7e6734;
 
@@ -366,26 +448,42 @@ export default {
         float: left;
     }
     .datails_h{
+<<<<<<< HEAD
         display: inline-block;
         width: 7rem;
         font-size: .3rem;
         line-height: .6rem;
         margin:.3rem .25rem;
+=======
+        float: left;
+        width: 6.8rem;
+        height: 15rem;
+        /* border:1px solid red; */
+        margin:.3rem .35rem;
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
         background-color: #fff;
         padding:.3rem .3rem;
     }
     hr{
         float: left;
         width: 100%;
+<<<<<<< HEAD
         margin:.3rem 0;
     }
     .datails_h .txt{
         line-height: .42rem;
         font-size: .29rem;
+=======
+    }
+    .txt{
+        line-height: .42rem;
+        font-size: .28rem;
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
         color: #1b1b1b;
         padding-left: .35rem;
         position: relative;
         text-align: justify;
+<<<<<<< HEAD
         padding-top:.2rem;
     } 
     .text{
@@ -509,6 +607,8 @@ export default {
         width: 7rem;
         margin-left:.3rem;
         padding-bottom:.7rem;
+=======
+>>>>>>> 671309309aaf0357209e5476f4022be543e2526b
     }
 </style>
 

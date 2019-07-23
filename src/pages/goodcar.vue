@@ -2,7 +2,7 @@
     <div>
         <Picture :itemdata="arr"></Picture>
         <Videocarlist :itemdata="arra"></Videocarlist>
-        <More more="更多超值车源" :itemdata="arrb"></More>    
+        <More more="更多超值车源" :itemdata="arrb"></More>
     </div>
 </template>
 <script>
