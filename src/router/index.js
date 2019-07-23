@@ -4,7 +4,6 @@ import Yichenggou from '../pages/yichenggou'
 import Jiancebaogao from '../pages/jiancebaogao'
 import Canshu from "../pages/canshu"
 import Userinfo from "../pages/userinfo"
-
 import LocationStr from '../pages/LocationStr'
 import Serve from '../pages/serve'
 import Datails from '../pages/datails'
@@ -23,6 +22,11 @@ import Valuable from '../pages/valuable'
 import Home from '../pages/home'
 import Brand from '../pages/brand'
 import Shoppingcart from '../components/shopping/shoppingcart'
+import Carinfo from '../pages/carinfo'
+import Wenti from '../pages/wenti'
+import Xieyi from '../pages/xieyi'
+import Sfyz from '../pages/sfyz'
+import Shangchuan from '../pages/shangchuan'
 
 Vue.use(Router)
 
@@ -82,11 +86,7 @@ export default new Router({
       name: 'Serve',
       component: Serve
     },
-    {
-      path: '/*',
-      name: 'Home',
-      component: Home
-    },
+   
     
     {
       path: '/filter',
@@ -143,6 +143,31 @@ export default new Router({
       name: 'Shoppingcart',
       component: Shoppingcart
     },
+    {
+      path: '/carinfo',
+      name: 'Carinfo',
+      component: Carinfo
+    },
+    {
+      path: '/wenti',
+      name: 'Wenti',
+      component: Wenti
+    },
+    {
+      path: '/xieyi',
+      name: 'Xieyi',
+      component: Xieyi
+    },
+    {
+      path: '/sfyz',
+      name: 'Sfyz',
+      component: Sfyz
+    },
+    {
+    path: '/shangchuan',
+    name: 'Shangchuan',
+    component: Shangchuan
+     },
     {
       path:"/*",redirect:"/index"
     }
