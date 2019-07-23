@@ -32,5 +32,6 @@ export default {
     background: #ffffff;
     position: relative;
     z-index: 1;
+    max-height: 120%;
 }
 </style>
