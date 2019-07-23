@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="section" v-for="(v,i) in arr" :key="i">
-            <div class="cont">
+            <div class="cont" @click="fun(id)">
                 <div class="cart-left">
                     <img class="image" :src="v.image" alt="">
                     <img :src="v.video" class="start">              
@@ -35,6 +35,11 @@ export default {
         }).then((ok)=>{
             this.arr=ok.data.cart
         })
+    },
+    methods: {
+        fun(id){
+            
+        }
     },
 }
 </script>
