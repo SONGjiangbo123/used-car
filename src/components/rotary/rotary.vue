@@ -12,8 +12,10 @@
     </div>
 </template>
 <script>
+
 import Swiper from 'swiper'
 import 'swiper/dist/css/swiper.min.css';
+
 export default {
     props:{
         itemdata:Array

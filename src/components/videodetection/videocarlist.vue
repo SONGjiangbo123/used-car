@@ -13,12 +13,12 @@
     </div>
 </template>
 <script>
-import Recommend from './recommend'
-import Caritem from '../repeat/caritem'
+const Recommend = () => import("./recommend")
+const Caritem = () => import("../repeat/caritem")
 export default {
     components:{
-        Caritem,
-        Recommend
+        Recommend,
+        Caritem
     },
     props:{
         itemdata:Array

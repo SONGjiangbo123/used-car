@@ -1,30 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Yichenggou from '../pages/yichenggou'
-import Jiancebaogao from '../pages/jiancebaogao'
-import Canshu from "../pages/canshu"
-import Userinfo from "../pages/userinfo"
-import Serve from '../pages/serve'
-import Datails from '../pages/datails'
-import Sousuo from '../pages/Sousuo'
-import Register from '../pages/Register'
-import Filter from '../pages/Filter'
-import Bulekefu from '../pages/Bulekefu'
-import Index from '../pages/index'
-import Shopping from '../pages/shopping'
-import Page from '../pages/page'
-import Sellcar from '../pages/sellcar'
-import Contract from '../pages/contract'
-import Videodetection from '../pages/videodetection'
-import Goodcar from '../pages/goodcar'
-import Valuable from '../pages/valuable'
-import Home from '../pages/home'
-import Brand from '../pages/brand'
-import LocationStr from '../pages/LocationStr'
-import Shoppingcart from '../pages/shoppingcart.vue'
-import All from '../pages/all'
-import Cart from '../pages/cart'
-import Inquiry from '../pages/inquiry'
 
 Vue.use(Router)
 
@@ -33,136 +8,136 @@ export default new Router({
       {
         path:"/index",
         name:"Index",
-        component:Index
+        component: resolve=>(require(["@/pages/index"],resolve))
       },
       {
         path:"/shopping",
         name:"Shopping",
-        component:Shopping
+        component: resolve=>(require(["@/pages/shopping"],resolve))
       },
       {
         path:"/page/:id",
         name:"Page",
-        component:Page
+        component: resolve=>(require(["@/pages/page"],resolve))
       },
       {
         path:"/sellcar",
         name:"Sellcar",
-        component:Sellcar
+        component: resolve=>(require(["@/pages/sellcar"],resolve))
       },
       {
         path: '/contract',
         name: 'Contract',
-        component: Contract
+        component: resolve=>(require(["@/pages/contract"],resolve))
       },
       { 
         path: '/videodetection',
         name: 'Videodetection',
-        component: Videodetection
+        component: resolve=>(require(["@/pages/videodetection"],resolve))
       },
       { 
         path: '/goodcar',
         name: 'Goodcar',
-        component: Goodcar
+        component: resolve=>(require(["@/pages/goodcar"],resolve))
       },
       {
         path: '/valuable',
         name: 'Valuable',
-        component: Valuable
+        component: resolve=>(require(["@/pages/valuable"],resolve))
       },
       {
         path: '/brand',
         name: 'Brand',
-        component: Brand
+        component: resolve=>(require(["@/pages/brand"],resolve))
       },
       {
         path: '/locationStr',
         name: 'LocationStr',
-        component: LocationStr
+        component: resolve=>(require(["@/pages/LocationStr"],resolve))
       },
       {
         path: '/home',
         name: 'Home',
-        component: Home
+        component: resolve=>(require(["@/pages/home"],resolve))    
       },
       {
         path: '/shoppingcart/cart',
         name: 'Shoppingcart',
-        component: Shoppingcart,
+        component: resolve=>(require(["@/pages/shoppingcart"],resolve)),
         children:[
           {
             path: '/shoppingcart/all',
             name: 'All',
-            component: All
+            component: resolve=>(require(["@/pages/all"],resolve))
           },
           {
             path: '/shoppingcart/cart',
             name: 'Cart',
-            component: Cart
+            component: resolve=>(require(["@/pages/cart"],resolve))
           },
           {
             path: '/shoppingcart/inquiry',
             name: 'Inquiry',
-            component: Inquiry
+            component: resolve=>(require(["@/pages/inquiry"],resolve))
           }
         ],redirect:'shoppingcart/cart'
       },
       
       {
-      path:'/yichenggou',
+        path:'/yichenggou',
         name:'Yichenggou',
-        component: Yichenggou
+        component: resolve=>(require(["@/pages/yichenggou"],resolve))
       },
       {
-      path:'/jiancebaogao',
+        path:'/jiancebaogao',
         name:'Jiancebaogao',
-        component: Jiancebaogao
+        component: resolve=>(require(["@/pages/jiancebaogao"],resolve))
       },
       {
         path:'/canshu',
         name:'Canshu',
-        component:Canshu
+        component: resolve=>(require(["@/pages/canshu"],resolve))
       },
       {
         path:"/userinfo",
         name:"/Userinfo",
-        component:Userinfo
+        component: resolve=>(require(["@/pages/userinfo"],resolve))
       
       },
 
       {
         path: '/datails',
         name: 'Datails',
-        component: Datails
+        component: resolve=>(require(["@/pages/datails"],resolve))
       },
       
       {
         path: '/sousuo',
         name: 'Sousuo',
-        component: Sousuo
+        component: resolve=>(require(["@/pages/Sousuo"],resolve))
       },
       {
         path: '/register',
         name: 'Register',
-        component: Register
+        component: resolve=>(require(["@/pages/Register"],resolve))
       },
   
       {
         path: '/serve',
         name: 'Serve',
-        component: Serve
+        component: resolve=>(require(["@/pages/serve"],resolve))
       },
    
      
       {
         path: '/filter',
         name: 'Filter',
-        component: Filter
+        component: resolve=>(require(["@/pages/Filter"],resolve))
       },
       {
         path: '/bulekefu',
         name: 'Bulekefu',
-        component: Bulekefu
+        component: resolve=>(require(["@/pages/Bulekefu"],resolve))
       },
       {
         path:"/*",redirect:"/index"

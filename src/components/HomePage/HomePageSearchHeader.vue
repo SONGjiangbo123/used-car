@@ -5,7 +5,7 @@
          <i class="header_log"></i>
          <input type="text" class="header_input" placeholder="搜索您想要的车">
       </form>
-      <router-link to="#" class="header_btn">取消</router-link>
+      <router-link to="/" class="header_btn">取消</router-link>
    </header>
 </template>
 <script>

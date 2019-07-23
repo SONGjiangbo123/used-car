@@ -49,8 +49,10 @@
           
 </template>
 <script>
-import LocationStr from './LocationStr'
-import Car from './car'  //引入组件
+
+const LocationStr = () => import("./LocationStr")
+const Car = () => import("./car")
+    
   export default {
     components:{
       Car ,

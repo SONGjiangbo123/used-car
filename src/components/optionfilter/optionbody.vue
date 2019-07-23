@@ -149,10 +149,12 @@
     </div>
 </template>
 <script>
-import Optioncolor from '../optionfilter/optioncolor'
-import Optionthreekuai from '../optionfilter/optionthreekuai'
-import Optionkuai from '../optionfilter/optionkuai'
-import Sider from '../optionfilter/slider'
+
+const Optioncolor = () => import("../optionfilter/optioncolor")
+const Optionthreekuai = () => import("../optionfilter/optionthreekuai")
+const Optionkuai = () => import("../optionfilter/optionkuai")
+const Sider = () => import("../optionfilter/slider")
+
 export default {
     props:{
         listtitle:Array

@@ -35,7 +35,7 @@ html {
 }
 body,html {
   height: 100%;
-  background-color: #ffffff;
+  background-color: #f4f4f4;
 }  
 a {
   background: transparent;

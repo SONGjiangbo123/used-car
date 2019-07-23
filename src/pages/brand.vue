@@ -66,8 +66,9 @@
 
 </template>
 <script>
-import Brander from '../components/brander/brander'
-import Remen from '../components/brander/remen'
+
+const Brander = () => import("../components/brander/brander")
+const Remen = () => import("../components/brander/remen")
 
 export default {
     components:{

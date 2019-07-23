@@ -6,9 +6,10 @@
     </div>
 </template>
 <script>
-import Picture from '../components/repeat/picture'
-import Videocarlist from '../components/videodetection/videocarlist'
-import More from '../components/repeat/more'
+
+const Picture = () => import("../components/repeat/picture")
+const Videocarlist = () => import("../components/videodetection/videocarlist")
+const More = () => import("../components/repeat/more")
 
 export default {
     components:{

@@ -9,8 +9,10 @@
     </div>
 </template>
 <script>
-import OptionTop from '../components/optionfilter/optiontop'
-import OptionBody from '../components/optionfilter/optionbody'
+
+const OptionTop = () => import("../components/optionfilter/optiontop")
+const OptionBody = () => import("../components/optionfilter/optionbody")
+
 export default {
     components:{
         OptionTop,

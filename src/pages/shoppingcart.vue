@@ -13,8 +13,7 @@ export default {
         return {
             arr:[
                 {"title":"全部","router":"/shoppingcart/all"},
-                {"title":"购物车","router":"/shoppingcart/cart"},
-                {"title":"咨询","router":"/shoppingcart/inquiry"}
+                {"title":"购物车","router":"/shoppingcart/cart"}
             ],
             
         }
@@ -43,8 +42,7 @@ export default {
     .header{
         text-align: center;
         background: white;
-        color: #989898;
-       
+        color: #989898;   
     }
     .header span{
         display: inline-block;

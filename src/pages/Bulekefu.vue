@@ -4,7 +4,9 @@
     </div>
 </template>
 <script>
-import Kefus from '../components/kefu/kefus'
+
+const Kefus = () => import("../components/kefu/kefus")
+
 export default {
     components:{
         Kefus

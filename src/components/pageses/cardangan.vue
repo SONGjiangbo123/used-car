@@ -64,8 +64,12 @@
 </template>
 
 <script>
-import Uvintips from './uvintips'
-import Renzhenfuwu from './renzhenfuwu'
+
+const Uvintips = () => import("./uvintips")
+const Renzhenfuwu = () => import("./renzhenfuwu")
+// import Uvintips from './uvintips'
+// import Renzhenfuwu from './renzhenfuwu'
+
 export default {
     components:{
         Uvintips,

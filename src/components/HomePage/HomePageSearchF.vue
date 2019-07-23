@@ -9,9 +9,11 @@
     </div>
 </template>
 <script>
-import HomePageSearchHeader from '../HomePage/HomePageSearchHeader'
-import HomePageSearchTage from '../HomePage/HomePageSearchTage'
-import HomePageSearchKefu from '../HomePage/HomePageSearchKefu'
+
+const HomePageSearchHeader = () => import("../HomePage/HomePageSearchHeader")
+const HomePageSearchTage = () => import("../HomePage/HomePageSearchTage")
+const HomePageSearchKefu = () => import("../HomePage/HomePageSearchKefu")
+
 export default {
     components:{
         HomePageSearchHeader,

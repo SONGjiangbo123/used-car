@@ -9,8 +9,10 @@
 </template>
 	
 <script>
-	import Head from "../components/head/head"
-	import Fangan from "../components/fangan/fangan"
+
+	const Head = () => import("../components/head/head")
+	const Fangan = () => import("../components/fangan/fangan")
+
 	export default{
 		components:{
 			Head,
@@ -21,9 +23,7 @@
 			return{
 			
 			}
-		},
-
-		
+		},		
 	}
 </script>
 

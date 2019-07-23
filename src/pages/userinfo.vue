@@ -5,7 +5,9 @@
 </template>
 
 <script>
-	import Userxinxi from "../components/userxinxi/userxinxi"
+	
+	const Userxinxi = () => import("../components/userxinxi/userxinxi")
+
 	export default{
 		components:{
 			Userxinxi

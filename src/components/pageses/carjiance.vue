@@ -162,12 +162,17 @@
 </template>
 
 <script>
-import Uvintips from './uvintips'
-import Topdixed from './topdixed'
-import Changjian from './changjian'
-import Xiangshituijian from './xiangshituijian'
-import Shoppingcar from './shoppingcar'
+// import Uvintips from './uvintips'
+// import Topdixed from './topdixed'
+// import Changjian from './changjian'
+// import Xiangshituijian from './xiangshituijian'
+// import Shoppingcar from './shoppingcar'
 
+const Uvintips = () => import("./uvintips")
+const Topdixed = () => import("./topdixed")
+const Changjian = () => import("./changjian")
+const Xiangshituijian = () => import("./xiangshituijian")
+const Shoppingcar = () => import("./Shoppingcar")
 
 export default {
     components:{

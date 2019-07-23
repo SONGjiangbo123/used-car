@@ -42,7 +42,7 @@
 <script>
 export default {
     props:{
-        id:String,
+        id:Number,
         imgurl:String,
         hot:String,
         newcar:String,
@@ -163,9 +163,9 @@ export default {
     }
     .labels{
         margin-right: 15px;
-        border-top: 1px solid #eee;
         height: .6rem;
         margin-left: 3.14rem;
+        border-top: 1px solid #eee;
     }
     .label{
         display: inline-block;
