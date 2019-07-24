@@ -11,7 +11,7 @@ import 'mint-ui/lib/style.css'
 import axios from 'axios'
 
 Vue.use(MintUI)
-Vue.use(ElementUI)
+// Vue.use(ElementUI)
 Vue.prototype.axios = axios
 Vue.config.productionTip = false
 

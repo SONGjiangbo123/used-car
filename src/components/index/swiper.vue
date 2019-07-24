@@ -25,22 +25,22 @@
             </mt-swipe-item>
             <mt-swipe-item class="carousel-wrap-item" id="2" ref="dataInfo">
                 <router-link to="/contract">
-                <img id="2" src="../../assets/shipinjiance.jpg" />
+                <img id="2" src="../../assets/jinrong.jpg" />
                 </router-link>
             </mt-swipe-item>
             <mt-swipe-item class="carousel-wrap-item" id="3" ref="dataInfo">
                 <router-link to="/videodetection">
-                <img id="3" src="" />
+                <img id="3" src="../../assets/shipinjiance.jpg" />
                 </router-link>
             </mt-swipe-item>
             <mt-swipe-item class="carousel-wrap-item" id="4" ref="dataInfo">
                 <router-link to="/goodcar">
-                <img id="4" src="" />
+                <img id="4" src="../../assets/chaozhihaoche.png" />
                 </router-link>
             </mt-swipe-item>
             <mt-swipe-item class="carousel-wrap-item" id="5" ref="dataInfo">
                 <router-link to="/valuable">
-                <img id="5" src="" />
+                <img id="5" src="../../assets/zhuanjia.jpg" />
                 </router-link>
             </mt-swipe-item>
             </mt-swipe>

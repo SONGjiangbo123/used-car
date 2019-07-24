@@ -137,7 +137,11 @@ export default {
     },
     adc(){
       this.sttume = true;
-      this.math = !this.math;
+      if(this.math==false){
+        this.math = true
+      }else{
+        this.math = false
+      }
       this.mend =false;
       this.flag=false;
       if(this.skt == true){
@@ -159,7 +163,17 @@ export default {
     // 选择显示汽车价位对应的汽车信息
     price(index){
       this.infor = index;
-      this.math = !this.math;
+      // this.math = !this.math;
+      if(this.math==false){
+        this.math = true
+      }else{
+        this.math = false
+      }
+      if(this.skt==false){
+        this.skt = true
+      }else{
+        this.skt = false
+      }
       // 把 index 发送到后端，返回相应的汽车信息  index 是字符串
       // this.axios
     }
@@ -207,7 +221,7 @@ export default {
   text-align: center;
 }
 .shopping_li b{
-  font-weight: 100
+  font-weight: 400;
 }
 .shopping {
   font-size: 0.28rem;

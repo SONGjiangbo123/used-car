@@ -69,7 +69,7 @@
 </template>
 <script>
 
-const LocationStr = () => import("./LocationStr")
+const Staler = () => import("./staler")
 const Car = () => import("./car")
     
   export default {
