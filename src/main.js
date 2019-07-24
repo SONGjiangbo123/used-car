@@ -4,25 +4,20 @@ import Vue from 'vue'
 
 import App from './App'
 import router from './router'
-//映入axios
-import axios from 'axios'
 //引入mint-ui
 import MintUI from 'mint-ui'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
 import 'mint-ui/lib/style.css'
 
-Vue.prototype.axios = axios
-
-require("./mock");
-Vue.use(ElementUI)
-
-// Vue.prototype.$http = axios
-
-
-
+import axios from 'axios'
 
 Vue.use(MintUI)
+Vue.use(ElementUI)
+Vue.prototype.axios = axios
+Vue.config.productionTip = false
+
+require("./mock");
+
+// Vue.prototype.$http = axios
 
 /* eslint-disable no-new */
 new Vue({

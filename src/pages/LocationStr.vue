@@ -1,19 +1,36 @@
 <template>
 <!-- 首页城市定位 -->
     <div>
-        <LocationHearder></LocationHearder>
-        <nav>将从全国为您挑选该城市可购买的车辆</nav>
-        <LocationBody></LocationBody>
+        <LocationHearder v-on:spot="spot" ></LocationHearder>
+        <nav v-if="mast">将从全国为您挑选该城市可购买的车辆</nav>
+        <LocationBody :mast="mast" :goodmast="goodmast"></LocationBody>
     </div>
 </template>
 <script>
-import LocationHearder from '../components/location/locationHearder'
-import LocationBody from '../components/location/locationBody'
+
+const LocationHearder = () => import("../components/location/locationHearder")
+const LocationBody = () => import("../components/location/locationBody")
+
 export default {
     components:{
         LocationHearder,
         LocationBody
-    }
+    },
+    data(){
+        return{
+            mast:true, 
+            goodmast:true
+        }
+    },
+     methods:{
+     spot:function(data){
+            console.log(data)
+            this.mast = data
+            console.log(this.mast)
+            console.log(this.goodmast)
+
+        }
+     }
 }
 </script>
 <style scoped>

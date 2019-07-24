@@ -13,7 +13,9 @@
 </template>
 
 <script>
-import Uvintips from './uvintips'
+
+const Uvintips = () => import("./uvintips")
+
 export default {
     components:{
         Uvintips

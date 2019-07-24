@@ -8,7 +8,9 @@
     </div>
 </template>
 <script>
-import Branderem from './branderem'
+
+const Branderem = () => import("./branderem")
+
 export default {
     components:{
         Branderem

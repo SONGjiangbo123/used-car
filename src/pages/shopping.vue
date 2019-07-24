@@ -7,10 +7,13 @@
     </div>
 </template>
 <script>
-import Shoppingtop from "../components/shopping/shoppingtop"
-import Shoppingtext from "../components/shopping/shoppingtext"
-import Shoppingbottom from "../components/shopping/shoppingbottom"
-import Shoppingbottomone from "../components/shopping/shoppingbottomone"
+const Shoppingtop = () => import("../components/shopping/shoppingtop")
+const Shoppingtext = () => import("../components/shopping/shoppingtext")
+const Shoppingbottom = () => import("../components/shopping/shoppingbottom")
+const Shoppingbottomone = () => import("../components/shopping/shoppingbottomone")
+
+
+
 export default {
     components:{
         Shoppingtop,

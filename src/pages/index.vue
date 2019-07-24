@@ -648,9 +648,13 @@
 <script>
 //    cockLoft_tabs_hidden_div_block
 import { Swipe, SwipeItem } from "mint-ui";
-import Logocai from '../components/index/logocai';
-import Jinrizuixin from '../components/index/jinrizuixin';
-import Swiper from '../components/index/swiper';
+const Logocai = () => import("../components/index/logocai")
+const Jinrizuixin = () => import("../components/index/jinrizuixin")
+const Swiper = () => import("../components/index/swiper")
+
+// import Logocai from '../components/index/logocai';
+// import Jinrizuixin from '../components/index/jinrizuixin';
+// import Swiper from '../components/index/swiper';
 export default {
     components:{
         Logocai,

@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- 热门文章 -->
         <router-link to="" class="list" v-for="(v,i) in itemdata" :key="i">
             <img :src="v.image" alt="">
             <h3>{{v.title}}</h3>

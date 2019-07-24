@@ -60,14 +60,15 @@
             <p>c</p>
             <Brander class="brand_d"></Brander>
         </div>
-        <Remen></Remen>
+        <Remen class="brand_w"></Remen>
 
     </div>
 
 </template>
 <script>
-import Brander from '../components/brander/brander'
-import Remen from '../components/brander/remen'
+
+const Brander = () => import("../components/brander/brander")
+const Remen = () => import("../components/brander/remen")
 
 export default {
     components:{
@@ -139,12 +140,13 @@ export default {
     body{
         line-height: 1;
     }
-    remen{
-        display: block;
+    .brand_w{
+         display: block;
         position: fixed;
+        float: left;
         top: 50%;
         right: 0;
         transform: translate3d(0,-50%,0);
-        z-index: 9;
+        z-index: 9; 
     }
 </style>

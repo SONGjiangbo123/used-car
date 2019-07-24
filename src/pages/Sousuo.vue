@@ -5,7 +5,9 @@
     </div>
 </template>
 <script>
-import HomePageSearchF from '../components/HomePage/HomePageSearchF'
+
+const HomePageSearchF = () => import("../components/HomePage/HomePageSearchF")
+
 export default {
     components:{
         HomePageSearchF

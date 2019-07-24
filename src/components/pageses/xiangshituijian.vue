@@ -6,8 +6,10 @@
 </template>
 
 <script>
-import Uvintips from './uvintips'
-import Shoppingbottomone from '../shopping/shoppingbottomone'
+
+const Uvintips = () => import("./uvintips")
+const Shoppingbottomone = () => import("../shopping/shoppingbottomone")
+
 export default {
    components:{
        Uvintips,

@@ -5,7 +5,9 @@
     </div>
 </template>
 <script>
-import RegisterOK from '../components/Register/RegisterOk'
+
+const RegisterOK = () => import("../components/Register/RegisterOk")
+
 export default {
     components:{
         RegisterOK

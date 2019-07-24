@@ -8,13 +8,19 @@
                 <span></span>
             </div>
             <ul class="info">
+                <router-link to="./staler">
                 <li class="list-item">
+                    
                     <span class="MD-c2b-car-sale-o-c2b-trigger-title">卖车城市</span>
                     <p class="MD-c2b-car-sale-o-c2b-trigger-collect">
-                        <span class="MD-c2b-car-sale-o-c2b-trigger-content MD-c2b-car-sale-o-c2b-trigger-finish">北京</span>
-                        <i class="MD-c2b-car-sale-o-c2b-trigger-arrow"></i>
+                        
+                            <span class="MD-c2b-car-sale-o-c2b-trigger-content MD-c2b-car-sale-o-c2b-trigger-finish">北京</span>
+                            <i class="MD-c2b-car-sale-o-c2b-trigger-arrow"></i>
+                        
                     </p>
+                   
                 </li>
+                 </router-link>
                 <li class="list-item">
                     <span class="MD-c2b-car-sale-o-c2b-trigger-title">车辆牌照</span>
                     <p class="MD-c2b-car-sale-o-c2b-license-collect">
@@ -22,6 +28,7 @@
                         <span class="MD-c2b-car-sale-o-c2b-license-content">A</span>
                     </p>
                 </li>
+                <router-link to="./brand">
                 <li class="list-item">
                     <span class="MD-c2b-car-sale-o-c2b-trigger-title">品牌车系</span>
                     <p class="MD-c2b-car-sale-o-c2b-trigger-collect">
@@ -29,6 +36,7 @@
                         <i class="MD-c2b-car-sale-o-c2b-trigger-arrow"></i>
                     </p>
                 </li>
+                </router-link>
                 <li class="list-item">
                     <span class="MD-c2b-car-sale-o-c2b-trigger-title">上牌时间</span>
                     <p class="MD-c2b-car-sale-o-c2b-trigger-collect">
@@ -43,25 +51,31 @@
                         <span>万公里</span>
                     </p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" @click="show()">
                     <span class="MD-c2b-car-sale-o-c2b-trigger-title">车况自评</span>
                     <p class="MD-c2b-car-sale-o-c2b-trigger-collect">
                         <span class="MD-c2b-car-sale-o-c2b-trigger-content">请选择车况</span>
+                        
                         <i class="MD-c2b-car-sale-o-c2b-trigger-arrow"></i>
+                        <Car class="box2" v-if="bool"></Car>
                     </p>
                 </li>
+                
             </ul>
+            <div class="color_b">车辆估价</div>
         </div>   
     </div>
           
 </template>
 <script>
-import LocationStr from './LocationStr'
-import Car from './car'  //引入组件
+
+const LocationStr = () => import("./LocationStr")
+const Car = () => import("./car")
+    
   export default {
     components:{
       Car ,
-      LocationStr//引用组件
+      Staler//引用组件
     },
     data(){
       return{
@@ -81,9 +95,14 @@ import Car from './car'  //引入组件
 <style scoped>
     .color{
         font-size: .3rem;
-        height: 100%;
+        /* height: 100%; */
         background: #f9f9f9;
-        line-height: 1;
+        /* line-height: 1; */
+    }
+     .color_a{
+        background-color: #fff;
+        /* border:1px solid red; */
+        height: 6.7rem;
     }
     .color_a{
         background-color: #fff;
@@ -100,12 +119,13 @@ import Car from './car'  //引入组件
         margin-left:5%;
     }
     .nav{
-        width: 80%;
+        width: 100%;
         text-align: center;
         float: left;
     }
     .box1{
-        height: .9rem;
+        width: 100%;
+        height: 1.1rem;
         background: #fff;
         font-size: .3rem;
         color: #1b1b1b;
@@ -148,6 +168,91 @@ import Car from './car'  //引入组件
         align-items: center;
     }
     .list-item>p {
+        height: 1rem;
+        line-height: 1rem;
+    }
+    .MD-c2b-car-sale-o-c2b-trigger-collect {
+        width: 70%;
+        height: 1.2rem;
+        font-size: .28rem;
+        color: #ccc;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .MD-c2b-car-sale-o-c2b-trigger-finish {
+        color: #333;
+      
+    }
+    .MD-c2b-car-sale-o-c2b-trigger-content {
+        font-size: .28rem;
+        color: #ccc;
+        display: inline-block;
+        width: 90%;
+        height: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 1rem;
+        text-align: right;
+    }
+    .MD-c2b-car-sale-o-c2b-license-content:first-child {
+        margin-right: .4rem;
+    }
+    .MD-c2b-car-sale-o-c2b-license-content {
+        display: inline-block;
+        height: 100%;
+    }
+    .MD-c2b-car-sale-o-c2b-license-collect {
+        width: 60%;
+        height: 1.2rem;
+        font-size: .28rem;
+        color: #333;
+        text-align: right;
+        line-height: 1.2rem;
+    }
+    .MD-c2b-car-sale-o-c2b-license-content::after {
+        content: '';
+        display: inline-block;
+        width: .14rem;
+        height: .14rem;
+        border: solid #DBDADA;
+        border-width: 1.5px 1.5px 0 0;
+        transform: rotate(135deg);
+        margin: 0 0 .05rem .15rem;
+    }
+    .MD-c2b-car-sale-o-c2b-trigger-finish {
+        color: #333;
+    }
+    .MD-c2b-car-sale-o-c2b-mileage-collect {
+        width: 60%;
+        height: 1rem;
+        font-size: .28rem;
+        color: #333;
+        text-align: right;
+        line-height: 1rem;
+    }
+    .MD-c2b-car-sale-o-c2b-mileage-content {
+        display: inline-block;
+        border: 0;
+        outline: 0;
+        height: .4rem;
+        line-height: .4rem;
+        padding: .15rem 0;
+        width: 65%;
+        text-align: right;
+        font-size: .28rem;
+        color: #333;
+        
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #cccccc;
+    }
+    .MD-c2b-car-sale-o-c2b-trigger-title{
+        color:black;
+    }
+    .color_b{
+        width: 100%;
         height: 1rem;
         line-height: 1rem;
     }

@@ -7,8 +7,10 @@
 </template>
 
 <script>
-	import Head from "../components/head/head"
-	import Jiance from "../components/jiance/jiance"
+
+	const Head = () => import("../components/head/head")
+	const Jiance = () => import("../components/jiance/jiance")
+
 	export default{
 		components:{
 			Head,

@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="nav">
-        <router-link to="" class="nav-aBack">
+        <router-link to="/index" class="nav-aBack">
         </router-link>
             <span>我要卖车</span>
         <router-link to="" class="nav-sell">

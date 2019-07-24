@@ -68,6 +68,7 @@ export default {
         position: fixed;
         opacity: .5;
         top:0;
+        left: 0;
     }
     .item_b{
         width: 100%;
@@ -75,6 +76,7 @@ export default {
         /* border:1px solid red; */
         position: fixed;
         bottom:0;
+        left: 0;
         background-color: #fff;
     }
     .item_d{

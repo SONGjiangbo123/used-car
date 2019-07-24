@@ -15,11 +15,12 @@
 </template>
 
 <script>
-import Pagecar from '../components/pageses/pagecar'
-import Baowuliu from '../components/pageses/baowuliu'
-import Pagebody from '../components/pageses/pagebody'
-import Cardangan from '../components/pageses/cardangan'
-import Carjiance from '../components/pageses/carjiance'
+
+const Pagecar = () => import("../components/pageses/pagecar")
+const Baowuliu = () => import("../components/pageses/baowuliu")
+const Pagebody = () => import("../components/pageses/pagebody")
+const Cardangan = () => import("../components/pageses/cardangan")
+const Carjiance = () => import("../components/pageses/carjiance")
 
 
 export default {
