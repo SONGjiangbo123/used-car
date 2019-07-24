@@ -1,7 +1,9 @@
 <template>
 <!-- 城市头部 -->
    <div class="Search_header">
-        <em class="header_goback"></em>
+        <a href="javascript:history.go(-1);">
+            <em class="header_goback"></em>
+        </a>
         <p>
             <i class="header_logo"></i>
             <span>请输入城市名称或拼音</span>

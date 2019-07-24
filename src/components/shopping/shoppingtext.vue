@@ -7,19 +7,19 @@
           <span></span>
         </li>
         <li>
-          <router-link to="/" class="shopping_li">
+          <router-link to="/brand" class="shopping_li">
             品牌
             <span></span>
           </router-link>
         </li>
         <li>
-          <router-link to="/" class="shopping_li">
+          <router-link class="shopping_li">
             价格
             <span></span>
           </router-link>
         </li>
         <li>
-          <router-link to="/" class="shopping_li">
+          <router-link to="/Filter" class="shopping_li">
             更多
             <span></span>
           </router-link>

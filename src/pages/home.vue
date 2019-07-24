@@ -2,7 +2,8 @@
     <div>
         <div class="color">
             <div class="box1">
-                <em class="header_goback"></em>
+                <a href="javascript:history.go(-1)" class="header_goback">
+                </a>
                 <p class="nav">车辆估价</p>
                 <span></span>
             </div>
@@ -83,6 +84,11 @@ import Car from './car'  //引入组件
         height: 100%;
         background: #f9f9f9;
         line-height: 1;
+    }
+    .color_a{
+        background-color: #fff;
+        /* border:1px solid red; */
+        height: 6.7rem;
     }
    .item:hover Car{
        display: block;

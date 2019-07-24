@@ -1,7 +1,7 @@
 <template>
     <div>
     <div v-for="(v,i) in shopping" :key="i" class="item">
-        <router-link to="/"  >
+        <router-link to="/page"  >
             <div class="item_img">
                 <span>
                     <img :src="v.imgone">

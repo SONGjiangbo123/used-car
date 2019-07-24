@@ -4,12 +4,12 @@
       <router-link to="/index">
         <i></i>
       </router-link>
-      <router-link to class="header_seach">
+      <router-link to="/sousuo" class="header_seach">
         <span class="header-search-text">
           <span class="text">搜索你想要的车</span>
         </span>
       </router-link>
-      <router-link to class="header-city">北京</router-link>
+      <router-link to="/LocationStr" class="header-city">北京</router-link>
     </header>
   </div>
 </template>
